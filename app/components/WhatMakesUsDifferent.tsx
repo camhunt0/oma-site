@@ -1,25 +1,20 @@
 import Image from "next/image";
-
 const pillars = [
-  { title: "Root-cause thinking", body: "The focus isn't just where you hurt — it's which muscles are underperforming and what compensation pattern that created." },
-  { title: "Hands-on, highly specific assessment", body: "Every session is individualized. The process is built around comparing movement, testing muscles, and retesting after treatment." },
-  { title: "Performance and rehab lens", body: "Ohio Muscle Activation is for people who want to keep lifting, training, golfing, and moving well — not just manage symptoms." },
+  { title: "Root-cause thinking", body: "The focus isn't just where you hurt — it's which muscles have lost their neurological signal and what compensation pattern that's created." },
+  { title: "Hands-on neuromuscular assessment", body: "Every session is individualized. The process tests specific muscles, identifies signal loss, and retests in real time after treatment." },
+  { title: "Performance and rehab lens", body: "Ohio Muscle Activation is for people who want to keep lifting, training, golfing, and moving well — not just manage symptoms indefinitely." },
 ];
-
 const credentials = [
   { label: "MATRx Practitioner", sub: "Advanced Muscle Activation Techniques training — the highest level of MAT certification." },
   { label: "NASM Certified Personal Trainer", sub: "Strength and movement background that extends beyond treatment alone." },
   { label: "TPI Level 1 Certified", sub: "Added value for golfers and rotational athletes." },
 ];
-
 export default function WhatMakesUsDifferent() {
   return (
     <section style={{ padding: "100px 48px", background: "var(--surface)", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>What Makes Us Different</p>
         <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 52 }}>A practitioner-led experience for people tired of generic care.</h2>
-
-        {/* 3 pillars */}
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2, marginBottom: 2 }}>
           {pillars.map((p, i) => (
             <div key={i} style={{ padding: "36px 30px", background: "var(--bg)", border: "1px solid var(--border)" }}>
@@ -29,8 +24,6 @@ export default function WhatMakesUsDifferent() {
             </div>
           ))}
         </div>
-
-        {/* Practitioner block — their bio content, our layout */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2, border: "1px solid var(--border)" }}>
           <div style={{ padding: "44px 40px", borderRight: "1px solid var(--border)", background: "var(--bg)" }}>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Your Practitioner</p>
@@ -39,7 +32,7 @@ export default function WhatMakesUsDifferent() {
               Cameron founded Ohio Muscle Activation after his own lower-body injury progressed into severe sciatica and the usual treatment route failed to fully solve the problem. Finding Muscle Activation Techniques changed the trajectory of his recovery — and eventually changed his career path.
             </p>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 28 }}>
-              Today, he blends MATRx training with a personal training and golf-performance background, giving clients a higher-level experience built for both chronic-pain cases and active adults who want to keep lifting, training, golfing, and moving well.
+              Today, he blends MATRx training with a personal training and golf-performance background, giving clients a higher-level neuromuscular experience built for both chronic-pain cases and active adults who want to keep performing at their best.
             </p>
             <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
               {credentials.map((c, i) => (
@@ -53,18 +46,9 @@ export default function WhatMakesUsDifferent() {
               ))}
             </div>
           </div>
-
-          {/* Photo + Arnold callout */}
-          <div style={{ padding: "44px 40px", background: "var(--bg)", display: "flex", flexDirection: "column", gap: 20 }}>
+          <div style={{ padding: "44px 40px", background: "var(--bg)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
             <div style={{ flex: 1, overflow: "hidden", border: "1px solid var(--border)" }}>
-              <Image src="/mat-session-d.jpg" alt="Cameron Hunt during a MAT session" width={1400} height={2000} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
-            </div>
-            {/* ⚠️ PLACEHOLDER: Update with your actual Arnold Sports involvement */}
-            <div style={{ padding: "18px 20px", borderLeft: "3px solid var(--red)", background: "var(--red-dim)" }}>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: "var(--red)", marginBottom: 4 }}>Arnold Sports Festival</p>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)", lineHeight: 1.6 }}>
-                Cameron introduced MAT to over 50 XPC Powerlifting competitors at the Arnold Sports Festival — working with world-class athletes from Sweden, British Columbia, and across the US. Every athlete tested had neuromuscular weaknesses limiting their movement. Multiple athletes hit PRs on their lifts the same day.
-              </p>
+              <Image src="/cameron-headshot-new.jpg" alt="Cameron Hunt, founder of Ohio Muscle Activation" width={800} height={1000} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
             </div>
           </div>
         </div>
