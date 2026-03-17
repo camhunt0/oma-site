@@ -45,6 +45,7 @@ export default function WhoItHelps() {
               loop
               playsInline
               preload="auto"
+              controls
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", minHeight: 280 }}
             >
               <source src="/arnold-testimonial.mp4" type="video/mp4" />
