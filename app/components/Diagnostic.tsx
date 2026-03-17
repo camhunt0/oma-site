@@ -55,12 +55,18 @@ export default function Diagnostic() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Schedule Online</p>
             <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.3rem", color: "var(--text)", marginBottom: 20 }}>Book Your Diagnostic</h3>
 
-            {/* Square widget injects an iframe before this script tag.
-               Use a literal <script> here (not next/script) so it stays in this container. */}
+            {/* Embed the widget iframe directly so it stays inside this card */}
             <div style={{ minHeight: 520 }}>
-              <script
-                src="https://square.site/appointments/buyer/widget/51xre9soyw3lm6/C3Z76D22JMF7Z.js"
-                async
+              <iframe
+                title="Square Appointments Booking"
+                src="https://app.squareup.com/appointments/buyer/widget/51xre9soyw3lm6/C3Z76D22JMF7Z"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  minHeight: 520,
+                  border: "none",
+                }}
+                allow="payment app.squareup.com"
               />
             </div>
 
