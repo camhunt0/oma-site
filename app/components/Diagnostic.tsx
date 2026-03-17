@@ -1,5 +1,6 @@
 "use client";
-import Script from "next/script";
+import { useEffect } from "react";
+
 const includes = [
   "A focused muscle and movement assessment",
   "Plain-language explanation of what we find",
@@ -7,11 +8,38 @@ const includes = [
   "A clear recommendation — no pressure to continue",
   "Fee credited toward treatment if you move forward",
 ];
+
 export default function Diagnostic() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src =
+      "https://square.site/appointments/buyer/widget/51xre9soyw3lm6/C3Z76D22JMF7Z.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
-    <section id="booking" style={{ padding: "100px 48px", background: "var(--surface)", borderTop: "1px solid var(--border)" }}>
-      <Script src="https://square.site/appointments/buyer/widget/51xre9soyw3lm6/C3Z76D22JMF7Z.js" strategy="lazyOnload" />
-      <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "72px 100px", alignItems: "start" }}>
+    <section
+      id="booking"
+      style={{
+        padding: "100px 48px",
+        background: "var(--surface)",
+        borderTop: "1px solid var(--border)",
+      }}
+    >
+      <div
+        style={{
+          maxWidth: 1100,
+          margin: "0 auto",
+          display: "grid",
+          gridTemplateColumns: "1fr 1fr",
+          gap: "72px 100px",
+          alignItems: "start",
+        }}
+      >
         <div>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Start Here</p>
           <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 20 }}>Begin with a Muscle Check Diagnostic.</h2>
@@ -38,7 +66,10 @@ export default function Diagnostic() {
           <div style={{ background: "var(--bg)", border: "1px solid var(--border)", borderTop: "3px solid var(--red)", padding: "36px 32px" }}>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Schedule Online</p>
             <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.3rem", color: "var(--text)", marginBottom: 20 }}>Book Your Diagnostic</h3>
-            <div id="square-booking-widget" style={{ minHeight: 200 }} />
+
+            {/* Square widget injects here */}
+            <div id="square-appointments-widget" style={{ minHeight: 200 }} />
+
             <div style={{ marginTop: 20, paddingTop: 20, borderTop: "1px solid var(--border)", display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
               {["Private 1-on-1 care", "Powell, Ohio", "By appointment only"].map(chip => (
                 <span key={chip} style={{ padding: "6px 12px", border: "1px solid var(--border)", fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--muted)" }}>{chip}</span>
