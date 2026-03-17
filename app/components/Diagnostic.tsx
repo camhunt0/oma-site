@@ -11,14 +11,18 @@ const includes = [
 
 export default function Diagnostic() {
   useEffect(() => {
+    const src = "https://square.site/appointments/buyer/widget/51xre9soyw3lm6/C3Z76D22JMF7Z.js";
+    const existing = document.querySelector<HTMLScriptElement>(`script[src="${src}"]`);
+    if (existing) return;
+
     const script = document.createElement("script");
-    script.src =
-      "https://square.site/appointments/buyer/widget/51xre9soyw3lm6/C3Z76D22JMF7Z.js";
+    script.src = src;
     script.async = true;
+    script.dataset.squareAppointmentsWidget = "true";
     document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
+
+    // Intentionally no cleanup: in dev (React StrictMode) effects mount/unmount twice,
+    // and removing the script can prevent the widget from ever initializing.
   }, []);
 
   return (
