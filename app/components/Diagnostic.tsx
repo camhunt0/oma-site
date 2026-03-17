@@ -1,5 +1,4 @@
 "use client";
-import Script from "next/script";
 
 const includes = [
   "A focused muscle and movement assessment",
@@ -56,11 +55,14 @@ export default function Diagnostic() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Schedule Online</p>
             <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.3rem", color: "var(--text)", marginBottom: 20 }}>Book Your Diagnostic</h3>
 
-            {/* Square widget injects an iframe before this script tag */}
-            <Script
-              src="https://square.site/appointments/buyer/widget/51xre9soyw3lm6/C3Z76D22JMF7Z.js"
-              strategy="afterInteractive"
-            />
+            {/* Square widget injects an iframe before this script tag.
+               Use a literal <script> here (not next/script) so it stays in this container. */}
+            <div style={{ minHeight: 520 }}>
+              <script
+                src="https://square.site/appointments/buyer/widget/51xre9soyw3lm6/C3Z76D22JMF7Z.js"
+                async
+              />
+            </div>
 
             <div style={{ marginTop: 20, paddingTop: 20, borderTop: "1px solid var(--border)", display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
               {["Private 1-on-1 care", "Powell, Ohio", "By appointment only"].map(chip => (
