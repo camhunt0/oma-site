@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import Script from "next/script";
 
 const includes = [
   "A focused muscle and movement assessment",
@@ -10,21 +10,6 @@ const includes = [
 ];
 
 export default function Diagnostic() {
-  useEffect(() => {
-    const src = "https://square.site/appointments/buyer/widget/51xre9soyw3lm6/C3Z76D22JMF7Z.js";
-    const existing = document.querySelector<HTMLScriptElement>(`script[src="${src}"]`);
-    if (existing) return;
-
-    const script = document.createElement("script");
-    script.src = src;
-    script.async = true;
-    script.dataset.squareAppointmentsWidget = "true";
-    document.body.appendChild(script);
-
-    // Intentionally no cleanup: in dev (React StrictMode) effects mount/unmount twice,
-    // and removing the script can prevent the widget from ever initializing.
-  }, []);
-
   return (
     <section
       id="booking"
@@ -71,8 +56,11 @@ export default function Diagnostic() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Schedule Online</p>
             <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.3rem", color: "var(--text)", marginBottom: 20 }}>Book Your Diagnostic</h3>
 
-            {/* Square widget injects here */}
-            <div id="square-appointments-widget" style={{ minHeight: 200 }} />
+            {/* Square widget injects an iframe before this script tag */}
+            <Script
+              src="https://square.site/appointments/buyer/widget/51xre9soyw3lm6/C3Z76D22JMF7Z.js"
+              strategy="afterInteractive"
+            />
 
             <div style={{ marginTop: 20, paddingTop: 20, borderTop: "1px solid var(--border)", display: "flex", flexWrap: "wrap", gap: 8, marginBottom: 16 }}>
               {["Private 1-on-1 care", "Powell, Ohio", "By appointment only"].map(chip => (
