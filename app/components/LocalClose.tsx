@@ -12,12 +12,12 @@ export default function LocalClose() {
           {/* Left — map + address */}
           <div>
             {/* Change #8: Google Maps embed */}
-            <div style={{ width: "100%", minHeight: 360, maxHeight: 520, overflow: "hidden", border: "1px solid var(--border)", marginBottom: 2 }}>
+            <div style={{ width: "100%", height: "100%", minHeight: 520, overflow: "hidden", border: "1px solid var(--border)", marginBottom: 2 }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3046.8!2d-83.0685!3d40.1578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838f3e9c8e9c9c9%3A0x0!2s10516+Sawmill+Pkwy+%23B%2C+Powell%2C+OH+43065!5e0!3m2!1sen!2sus!4v1"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3046.8!2d-83.0685!3d40.1578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838eed4acf88b53%3A0x847a7f3c69cc6c0e!2s10516%20Sawmill%20Pkwy%20%23B%2C%20Powell%2C%20OH%2043065!5e0!3m2!1sen!2sus!4v1&iwloc=B"
                 width="100%"
                 height="100%"
-                style={{ border: 0, display: "block", filter: "invert(90%) hue-rotate(180deg)", height: "115%", transform: "translateY(-6%)" }}
+                style={{ border: 0, display: "block", filter: "invert(90%) hue-rotate(180deg)", minHeight: 520 }}
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
