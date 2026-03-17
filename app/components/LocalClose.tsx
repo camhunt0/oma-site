@@ -14,7 +14,7 @@ export default function LocalClose() {
             {/* Change #8: Google Maps embed */}
             <div style={{ width: "100%", height: "100%", minHeight: 520, overflow: "hidden", border: "1px solid var(--border)", marginBottom: 2 }}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3046.8!2d-83.0685!3d40.1578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838eed4acf88b53%3A0x847a7f3c69cc6c0e!2s10516%20Sawmill%20Pkwy%20%23B%2C%20Powell%2C%20OH%2043065!5e0!3m2!1sen!2sus!4v1&iwloc=B"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3046.8!2d-83.0685!3d40.1578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8838eed4acf88b53%3A0x847a7f3c69cc6c0e!2s10516%20Sawmill%20Pkwy%20Suite%20B%2C%20Powell%2C%20OH%2043065!5e0!3m2!1sen!2sus!4v1&iwloc=B"
                 width="100%"
                 height="100%"
                 style={{ border: 0, display: "block", filter: "invert(90%) hue-rotate(180deg)", minHeight: 520 }}
