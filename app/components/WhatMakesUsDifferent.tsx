@@ -8,6 +8,7 @@ const credentials = [
   { label: "MATRx Practitioner", sub: "Advanced Muscle Activation Techniques training — the highest level of MAT certification." },
   { label: "NASM Certified Personal Trainer", sub: "Strength and movement background that extends beyond treatment alone." },
   { label: "TPI Level 1 Certified", sub: "Added value for golfers and rotational athletes." },
+  { label: "NXPro / Neux Stim", sub: "FDA-cleared electrical neuromuscular stimulation — used in advanced sessions to reinforce activation work from the table on the gym floor." },
 ];
 export default function WhatMakesUsDifferent() {
   return (
