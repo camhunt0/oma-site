@@ -40,14 +40,14 @@ export default function WhoItHelps() {
           </div>
           <div style={{ background: "var(--surface2)", border: "1px solid var(--border)", overflow: "hidden" }}>
             <video
-              controls
+              autoPlay
+              muted
+              loop
               playsInline
-              preload="metadata"
+              preload="auto"
               style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", minHeight: 280 }}
             >
               <source src="/arnold-testimonial.mp4" type="video/mp4" />
-              <source src="/arnold-testimonial.mov" type="video/quicktime" />
-              Your browser does not support the video tag.
             </video>
           </div>
         </div>
