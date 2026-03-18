@@ -39,9 +39,9 @@ export default function Hero() {
           </div>
           <div style={{ padding: "24px 28px", background: "var(--surface)", border: "1px solid var(--border)", borderLeft: "3px solid var(--red)" }}>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", fontStyle: "italic", color: "var(--text)", lineHeight: 1.6, marginBottom: 12 }}>
-              "After 18 months of hip pain that three PTs couldn't resolve, I had full range of motion back in 4 sessions."
+              "This was the first time I felt like someone actually fixed the root of the problem, not just treated the symptoms."
             </p>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", fontWeight: 700, color: "var(--red)", letterSpacing: "0.08em", textTransform: "uppercase" }}>— Client, Powell · Runner</p>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", fontWeight: 700, color: "var(--red)", letterSpacing: "0.08em", textTransform: "uppercase" }}>— Kyle G. · Collegiate Golfer</p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2 }}>
             {[
