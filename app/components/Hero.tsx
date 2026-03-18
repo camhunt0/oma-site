@@ -1,5 +1,4 @@
 import Image from "next/image";
-const chips = ["Chronic tightness", "Golf performance", "Post-surgical recovery", "Neck, hip, knee & low back"];
 export default function Hero() {
   return (
     <section style={{
@@ -33,11 +32,6 @@ export default function Hero() {
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--dim)", marginBottom: 28, animation: "fadeUp 0.6s 0.5s ease both" }}>
             A focused evaluation to identify what's holding your body back. Credited toward treatment if you continue.
           </p>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 8, animation: "fadeUp 0.6s 0.55s ease both" }}>
-            {chips.map(c => (
-              <span key={c} style={{ padding: "7px 14px", border: "1px solid var(--border)", fontFamily: "var(--font-body)", fontSize: "0.77rem", color: "var(--muted)" }}>{c}</span>
-            ))}
-          </div>
         </div>
         <div style={{ display: "grid", gap: 14, animation: "fadeUp 0.7s 0.3s ease both" }}>
           <div style={{ overflow: "hidden", border: "1px solid var(--border)", background: "var(--surface)", minHeight: 380 }}>
@@ -51,7 +45,7 @@ export default function Hero() {
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2 }}>
             {[
-              { label: "Location", value: "Sawmill Rd, Suite B" },
+              { label: "Location", value: "10516 Sawmill Rd, Suite B" },
               { label: "Call", value: "(614) 946-9071" },
               { label: "Style", value: "Private 1-on-1" },
             ].map(s => (
