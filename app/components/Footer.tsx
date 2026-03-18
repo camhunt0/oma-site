@@ -22,7 +22,7 @@ export default function Footer() {
           <a href="#" style={{ display: "flex", alignItems: "center", textDecoration: "none", marginBottom: 6 }}>
             <Image src="/logo-white.png" alt="Ohio Muscle Activation" width={150} height={44} style={{ height: "28px", width: "auto", opacity: 0.7 }} />
           </a>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", color: "var(--dim)" }}>10516 Sawmill Pkwy, Suite B · Powell, OH 43065</p>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", color: "var(--dim)" }}>10516 Sawmill Rd, Suite B · Powell, OH 43065</p>
         </div>
         <div style={{ display: "flex", gap: 24 }}>
           {[
