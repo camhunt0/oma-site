@@ -19,7 +19,7 @@ export default function Hero() {
             <span style={{ color: "var(--red)" }}>But it keeps<br />coming back.</span>
           </h1>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "1.05rem", fontWeight: 300, color: "var(--muted)", maxWidth: 540, lineHeight: 1.75, marginBottom: 32, animation: "fadeUp 0.6s 0.35s ease both" }}>
-            Your body is a neurological system. When a muscle is stressed, it stops sending signals to the brain — and other muscles compensate. Ohio Muscle Activation identifies which muscles have gone offline and restores their connection, 1-on-1, so movement feels stronger, cleaner, and more stable.
+            Your body is a neurological system. When a muscle is stressed, it stops sending signals to the brain, so other muscles compensate. Ohio Muscle Activation identifies which muscles have gone offline and restores their connection, 1-on-1, so movement feels stronger, cleaner, and more stable.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap", marginBottom: 10, animation: "fadeUp 0.6s 0.45s ease both" }}>
             <a href="#booking" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 28px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>

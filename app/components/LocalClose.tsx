@@ -40,10 +40,10 @@ export default function LocalClose() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Trusted Local Care</p>
             <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 20 }}>Private, 1-on-1 neuromuscular care in Powell, Ohio.</h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
-              Ohio Muscle Activation operates as a private, appointment-only clinic off Sawmill Road — no shared gym floor, no rushed sessions, no generic treatment protocols. Every appointment is one practitioner, one client, full focus.
+              Ohio Muscle Activation operates as a private, appointment-only clinic off Sawmill Road. No shared gym floor, no rushed sessions, no generic treatment protocols. Every appointment is one practitioner, one client, full focus.
             </p>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 28 }}>
-              Cameron founded Ohio Muscle Activation after his own experience with sciatica made clear that most treatment approaches address the symptom, not the neurological source. That firsthand understanding shapes every session — he knows what it feels like to do the usual things and stay stuck, and what it feels like when the right muscles finally come back online.
+              Cameron founded Ohio Muscle Activation after his own experience with sciatica made clear that most treatment approaches address the symptom, not the neurological source. That firsthand understanding shapes every session. He knows what it feels like to do the usual things and stay stuck, and what it feels like when the right muscles finally come back online.
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 32 }}>
               {["Powell", "Dublin", "Worthington", "Columbus", "Central Ohio"].map(area => (

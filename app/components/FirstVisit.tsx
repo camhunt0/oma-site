@@ -3,7 +3,7 @@ import Image from "next/image";
 const steps = [
   { num: "01", title: "Talk through what you're feeling", body: "Pain history, training background, what you've already tried, and what you want to get back to. Context matters." },
   { num: "02", title: "Assess movement and muscle function", body: "Specific range of motion and manual muscle tests identify where the system is underperforming." },
-  { num: "03", title: "Treat and retest", body: "Changes are verified in real time — so you can feel and see whether motion, stability, or strength improved in the session." },
+  { num: "03", title: "Treat and retest", body: "Changes are verified in real time so you can feel and see whether motion, stability, or strength improved in the session." },
   { num: "04", title: "Leave with clarity", body: "You'll know what was found, what the likely next step is, and whether continuing care is the right fit for your goals." },
 ];
 
@@ -15,7 +15,7 @@ export default function FirstVisit() {
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>What to Expect</p>
           <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 20 }}>Clear, calm, and specific. No pressure. No surprises.</h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75, marginBottom: 24 }}>
-            The first appointment is designed to feel more like a premium diagnostic process than a rushed treatment slot. The goal isn't to trap someone into a package — it's to help them understand what's happening in their body.
+            The first appointment is designed to feel more like a premium diagnostic process than a rushed treatment slot. The goal isn't to trap someone into a package. It's to help them understand what's happening in their body.
           </p>
           <div style={{ padding: "18px 22px", borderLeft: "3px solid var(--red)", background: "var(--red-dim)", marginBottom: 28 }}>
             <p style={{ fontFamily: "var(--font-display)", fontSize: "1rem", color: "var(--text)", letterSpacing: "0.02em" }}>No Guessing. No Pressure. Just Clarity.</p>

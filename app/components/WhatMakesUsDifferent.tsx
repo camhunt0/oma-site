@@ -1,11 +1,11 @@
 import Image from "next/image";
 const pillars = [
-  { title: "Root-cause thinking", body: "The focus isn't just where you hurt — it's which muscles have lost their neurological signal and what compensation pattern that's created." },
+  { title: "Root-cause thinking", body: "The focus isn't just where you hurt. It's which muscles have lost their neurological signal and what compensation pattern that's created." },
   { title: "Hands-on neuromuscular assessment", body: "Every session is individualized. The process tests specific muscles, identifies signal loss, and retests in real time after treatment." },
-  { title: "Performance and rehab lens", body: "Ohio Muscle Activation is for people who want to keep lifting, training, golfing, and moving well — not just manage symptoms indefinitely." },
+  { title: "Performance and rehab lens", body: "Ohio Muscle Activation is for people who want to keep lifting, training, golfing, and moving well, not just manage symptoms indefinitely." },
 ];
 const credentials = [
-  { label: "MATRx Practitioner", sub: "Advanced Muscle Activation Techniques training — the highest level of MAT certification." },
+  { label: "MATRx Practitioner", sub: "Advanced Muscle Activation Techniques training, the highest level of MAT certification." },
   { label: "NASM Certified Personal Trainer", sub: "Strength and movement background that extends beyond treatment alone." },
   { label: "TPI Level 1 Certified", sub: "Added value for golfers and rotational athletes." },
   { label: "NXPro / Neux Stim", sub: "FDA-cleared electrical neuromuscular stimulation — used in advanced sessions to reinforce activation work from the table on the gym floor." },

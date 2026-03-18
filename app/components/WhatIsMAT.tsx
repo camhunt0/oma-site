@@ -1,8 +1,8 @@
 export default function WhatIsMAT() {
   const steps = [
-    { num: "01", title: "Assess", body: "Precise manual muscle testing identifies which muscles have lost their neurological signal — where the communication between muscle and brain has broken down." },
+    { num: "01", title: "Assess", body: "Precise manual muscle testing identifies which muscles have lost their neurological signal. This is where the communication between muscle and brain has broken down." },
     { num: "02", title: "Activate", body: "Targeted hands-on input restores the neuromuscular connection, improving the muscle's ability to receive and respond to signals from the nervous system." },
-    { num: "03", title: "Verify", body: "Changes are verified in the same session. You feel the difference immediately — not after weeks of guessing." },
+    { num: "03", title: "Verify", body: "Changes are verified in the same session. You feel the difference immediately, not after weeks of guessing." },
   ];
   return (
     <section style={{ padding: "100px 48px", background: "var(--bg)", borderTop: "1px solid var(--border)" }}>
@@ -11,10 +11,10 @@ export default function WhatIsMAT() {
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>What Is MAT</p>
           <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 20 }}>Your body is a neurological system.</h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "1.05rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 14 }}>
-            When muscles fire, they send signals to the brain that drive healthy movement and performance. When a muscle is stressed or injured, it can stop firing — and other muscles step in to compensate. Those compensating muscles are the ones that feel tight and painful.
+            When muscles fire, they send signals to the brain that drive healthy movement and performance. When a muscle is stressed or injured, it can stop firing, and other muscles step in to compensate. Those compensating muscles are the ones that feel tight and painful.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "1.05rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 14 }}>
-            Muscle Activation Techniques is a root-cause, hands-on approach that identifies exactly which muscles have lost their neurological signal — and restores their ability to contract properly.
+            Muscle Activation Techniques is a root-cause, hands-on approach that identifies exactly which muscles have lost their neurological signal and restores their ability to contract properly.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "1.05rem", color: "var(--muted)", lineHeight: 1.8 }}>
             It's not massage. It's not stretching. It addresses the <em style={{ color: "var(--text)", fontStyle: "normal" }}>signal</em>, not just the symptom.

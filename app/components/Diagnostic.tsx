@@ -3,8 +3,8 @@
 const includes = [
   "A focused muscle and movement assessment",
   "Plain-language explanation of what we find",
-  "Clarity on which muscles have lost their neurological signal — and what that's causing",
-  "A clear recommendation — no pressure to continue",
+  "Clarity on which muscles have lost their neurological signal, and what that's causing",
+  "A clear recommendation with no pressure to continue",
   "Fee credited toward treatment if you move forward",
 ];
 
@@ -32,7 +32,7 @@ export default function Diagnostic() {
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Start Here</p>
           <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 20 }}>Begin with a Muscle Check Diagnostic.</h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75, marginBottom: 28 }}>
-            A focused, 1-on-1 evaluation designed to answer one question: which muscles have lost their neurological signal — and what is that causing in your body? You'll leave with clarity, not guesswork.
+            A focused, 1-on-1 evaluation designed to answer one question: which muscles have lost their neurological signal, and what is that causing in your body? You'll leave with clarity, not guesswork.
           </p>
           <div style={{ display: "flex", flexDirection: "column", gap: 12, marginBottom: 32, padding: "24px 28px", background: "var(--bg)", border: "1px solid var(--border)" }}>
             {includes.map((item, i) => (
@@ -78,7 +78,7 @@ export default function Diagnostic() {
             <div style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ flexShrink: 0, marginTop: 2 }}><circle cx="7" cy="7" r="6" stroke="var(--dim)" strokeWidth="1" /><path d="M7 6v3M7 4.5v.3" stroke="var(--dim)" strokeWidth="1.1" strokeLinecap="round" /></svg>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.78rem", color: "var(--dim)", lineHeight: 1.6 }}>
-                Prefer to call? Reach Cameron directly at <a href="tel:6149469071" style={{ color: "var(--muted)" }}>(614) 946-9071</a>. No obligation after the diagnostic — you'll leave with clarity on what was found and whether continuing care makes sense.
+                Prefer to call? Reach Cameron directly at <a href="tel:6149469071" style={{ color: "var(--muted)" }}>(614) 946-9071</a>. No obligation after the diagnostic. You'll leave with clarity on what was found and whether continuing care makes sense.
               </p>
             </div>
           </div>

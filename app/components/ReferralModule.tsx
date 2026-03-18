@@ -31,7 +31,7 @@ export default function ReferralModule() {
             Ohio Muscle Activation complements a client's existing care team by addressing muscle function and movement quality when other smart providers still see a gap.
           </p>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75, marginBottom: 28 }}>
-            You don't need to choose between MAT and your current care — we complement it.
+            You don't need to choose between MAT and your current care. We complement it.
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
             {providers.map(p => (
