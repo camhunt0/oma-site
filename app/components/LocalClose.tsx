@@ -28,7 +28,7 @@ export default function LocalClose() {
             <div style={{ padding: "16px 20px", background: "var(--surface)", border: "1px solid var(--border)", borderTop: "2px solid var(--red)", display: "flex", alignItems: "flex-start", gap: 14 }}>
               <svg width="14" height="18" viewBox="0 0 14 18" fill="none" style={{ flexShrink: 0, marginTop: 2 }}><path d="M7 1A6 6 0 0113 7c0 4.5-6 10-6 10S1 11.5 1 7a6 6 0 016-6z" stroke="#cc1818" strokeWidth="1.3" /><circle cx="7" cy="7" r="2" stroke="#cc1818" strokeWidth="1.3" /></svg>
               <div>
-                <p style={{ fontFamily: "var(--font-body)", fontWeight: 700, fontSize: "0.88rem", color: "var(--text)", marginBottom: 3 }}>10516 Sawmill Pkwy, Suite B</p>
+                <p style={{ fontFamily: "var(--font-body)", fontWeight: 700, fontSize: "0.88rem", color: "var(--text)", marginBottom: 3 }}>10516 Sawmill Rd, Suite B</p>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)" }}>Powell, OH 43065</p>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "0.78rem", color: "var(--dim)", marginTop: 4 }}>By appointment only · (614) 946-9071</p>
               </div>
