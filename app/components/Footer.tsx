@@ -1,8 +1,8 @@
 import Image from "next/image";
-export default function Footer() {
+export default function Footer({ showCTA = true }: { showCTA?: boolean }) {
   return (
     <footer style={{ background: "var(--surface)", borderTop: "1px solid var(--border)" }}>
-      <div style={{ padding: "80px 48px", background: "#0d0d0d", borderTop: "2px solid var(--red)", textAlign: "center" }}>
+      {showCTA && <div style={{ padding: "80px 48px", background: "#0d0d0d", borderTop: "2px solid var(--red)", textAlign: "center" }}>
         <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Ready to Get Answers</p>
         <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem,2.8vw,2.4rem)", color: "var(--text)", lineHeight: 1.15, maxWidth: 520, margin: "0 auto 28px", textTransform: "uppercase" }}>
           Ready to understand what your body has been missing?
@@ -16,7 +16,7 @@ export default function Footer() {
           </a>
         </div>
         <p style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--dim)", marginTop: 16 }}>$XX diagnostic · Credited toward treatment · No obligation</p>
-      </div>
+      <>}
       <div style={{ padding: "28px 48px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 18, borderTop: "1px solid var(--border)" }}>
         <div>
           <a href="#" style={{ display: "flex", alignItems: "center", textDecoration: "none", marginBottom: 6 }}>

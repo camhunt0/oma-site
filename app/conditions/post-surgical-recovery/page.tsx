@@ -159,7 +159,7 @@ export default function PostSurgicalRecovery() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer showCTA={false} />
     </>
   );
 }

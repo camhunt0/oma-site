@@ -162,7 +162,7 @@ export default function HipPain() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer showCTA={false} />
     </>
   );
 }
