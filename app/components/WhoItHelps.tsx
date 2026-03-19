@@ -8,7 +8,7 @@ export default function WhoItHelps() {
     { icon: "🎯", label: "Told 'Everything Looks Fine'", headline: "Imaging shows structure. MAT looks at the signal.", detail: "A muscle can test clean on an MRI and still not communicate properly with the brain. That neurological gap is exactly what MAT addresses, which most imaging misses.", href: null },
   ];
 
-  turn (
+  return (
     <section id="who-it-helps" style={{ padding: "100px 48px", background: "var(--bg)", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <div style={{ maxWidth: 600, marginBottom: 56 }}>
