@@ -35,7 +35,7 @@ export default function WhoItHelps() {
           <div style={{ padding: "32px 36px", background: "var(--surface)", border: "1px solid var(--border)", borderLeft: "3px solid var(--red)", display: "flex", flexDirection: "column", justifyContent: "center", gap: 20 }}>
             <div>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--red)", marginBottom: 12 }}>Arnold Sports Festival</p>
-              <p style={{ fontFamily: "var(--font-display)", fontSize: "2.2rem", fontWght: 900, color: "var(--text)", lineHeight: 1.05, marginBottom: 16 }}>50+<br /><span style={{ fontSize: "0.85rem", letterSpacing: "0.04em", fontWeight: 900 }}>Elite Athletes</span></p>
+              <p style={{ fontFamily: "var(--font-display)", fontSize: "2.2rem", fontWeight: 900, color: "var(--text)", lineHeight: 1.05, marginBottom: 16 }}>50+<br /><span style={{ fontSize: "0.85rem", letterSpacing: "0.04em", fontWeight: 900 }}>Elite Athletes</span></p>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.88rem", color: "var(--muted)", lineHeight: 1.75 }}>
                 Cameron worked with world-class XPC Powerlifting competitors from Sweden, British Columbia, and across the US. Every athlete tested had neuromuscular weaknesses limiting their movement. Multiple athletes hit PRs on their lifts the same day.
               </p>
