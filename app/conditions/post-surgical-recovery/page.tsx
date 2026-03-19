@@ -235,23 +235,6 @@ export default function PostSurgicalRecovery() {
         </section>
 
         {/* CTA */}
-        <section style={{ padding: "88px 48px", background: "#0d0d0d", borderTop: "2px solid var(--red)", textAlign: "center" }}>
-          <div style={{ maxWidth: 560, margin: "0 auto" }}>
-            <p style={sectionLabel}>Ready to Move Forward</p>
-            <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "var(--text)", marginBottom: 20 }}>
-              Find out which muscles went offline — and get them back.
-            </h2>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75, marginBottom: 32 }}>
-              A focused 1-on-1 evaluation to identify exactly which muscles have lost their neurological signal and what that's causing in your body.
-            </p>
-            <a href="/#booking" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 30px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>
-              Book a Muscle Check Diagnostic →
-            </a>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--dim)", marginTop: 14 }}>
-              Powell, Ohio · (614) 946-9071 · By appointment only
-            </p>
-          </div>
-        </section>
 
       </main>
       <Footer />
