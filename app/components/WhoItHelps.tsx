@@ -1,3 +1,4 @@
+"use client";
 // Change #3: Arnold Sports callout added here as an athlete credibility block
 export default function WhoItHelps() {
   const segments = [
