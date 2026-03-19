@@ -1,21 +1,35 @@
 import type { MetadataRoute } from "next";
 
+const base = "https://www.ohiomuscleactivation.com";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: "https://www.ohiomuscleactivation.com",
+      url: base,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 1,
     },
     {
-      url: "https://www.ohiomuscleactivation.com/conditions/post-surgical-recovery",
+      url: `${base}/conditions/neck-shoulder-tension`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
-      url: "https://www.ohiomuscleactivation.com/conditions/hip-pain",
+      url: `${base}/conditions/golf-performance`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/conditions/chronic-pain`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/conditions/strength-performance`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
