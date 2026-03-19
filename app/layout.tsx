@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import ScrollReveal from "./components/ScrollReveal";
 
 export const metadata: Metadata = {
   title: "Ohio Muscle Activation | Powell, Dublin & Columbus, Ohio | MAT Specialist",
@@ -166,7 +167,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
       </head>
-      <body>{children}</body>
+      <body><ScrollReveal />{children}</body>
     </html>
   );
 }

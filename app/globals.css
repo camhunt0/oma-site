@@ -12,8 +12,8 @@
   --red-bright: #e82020;
   --red-dim: rgba(204,24,24,0.1);
   --text: #f0ede8;
-  --text-muted: #999999;
-  --text-dim: #555555;
+  --muted: #a0988f;
+  --dim: #555555;
   --font-display: 'Arial Black', 'Arial Bold', Arial, sans-serif;
   --font-body: 'DM Sans', Arial, sans-serif;
 }
@@ -38,11 +38,51 @@ h1, h2, h3, h4 {
   letter-spacing: -0.01em;
 }
 
+a[style*="background: var(--red)"],
+a[style*="background:var(--red)"] {
+  transition: filter 0.18s ease, transform 0.18s ease;
+}
+a[style*="background: var(--red)"]:hover,
+a[style*="background:var(--red)"]:hover {
+  filter: brightness(1.15);
+  transform: translateY(-1px);
+}
+a[style*="background: var(--red)"]:active,
+a[style*="background:var(--red)"]:active {
+  filter: brightness(0.95);
+  transform: translateY(0px);
+}
+
+a[style*="background: transparent"]:hover,
+a[style*="background:transparent"]:hover {
+  background: rgba(255,255,255,0.06) !important;
+}
+
+p, li, span, label {
+  color: var(--muted);
+}
+
+h1, h2, h3, h4 {
+  color: var(--text);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.55s ease, transform 0.55s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+
 ::selection { background: var(--red); color: var(--text); }
 
-::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar { width: 3px; }
 ::-webkit-scrollbar-track { background: var(--bg); }
-::-webkit-scrollbar-thumb { background: var(--red); }
+::-webkit-scrollbar-thumb { background: var(--red); border-radius: 2px; }
 
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(24px); }
@@ -52,6 +92,5 @@ h1, h2, h3, h4 {
   from { opacity: 0; }
   to   { opacity: 1; }
 }
-
 .animate-fade-up { animation: fadeUp 0.6s ease forwards; }
 .animate-fade-in { animation: fadeIn 0.5s ease forwards; }
