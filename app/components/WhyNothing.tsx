@@ -1,7 +1,7 @@
 export default function WhyNothing() {
   const reasons = [
     { title: "Massage can calm symptoms without changing the pattern", body: "When the body is protecting around an inhibited muscle, the tension returns because the compensation pattern never changed." },
-    { title: "Stretching improves range, but not always control", body: "If a muscle isn't contracting well, the body may still avoid owning that range — which is why flexibility work can feel good but fail to stick." },
+    { title: "Stretching improves range, but not always control", body: "If a muscle isn't contracting well, the body may still avoid owning that range, which is why flexibility work can feel good but fail to stick." },
     { title: "PT strengthens movement patterns", body: "But if the muscles in that pattern have been neurologically inhibited, strengthening reinforces compensation rather than correcting it." },
     { title: "Adjustments don't hold when stability is missing", body: "Structure often shifts back when the muscular support system around the joint isn't working the way it should." },
   ];

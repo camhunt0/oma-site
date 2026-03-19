@@ -39,7 +39,7 @@ export default function WhatIsMAT() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", color: "var(--dim)", marginTop: 4, whiteSpace: "nowrap" }}>FDA-Cleared · NXPro Device</p>
           </div>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", color: "var(--muted)", lineHeight: 1.75 }}>
-            Once muscles are activated on the table, that work can be reinforced and extended on the gym floor. Advanced sessions incorporate the NXPro by Neux Technologies — an FDA-cleared electrical neuromuscular stimulation device that bridges the gap between treatment and training. By pairing NeuX Stim with targeted exercise, the newly activated muscles are immediately loaded and strengthened, accelerating results and building the neuromuscular foundation that makes progress stick.
+            Once muscles are activated on the table, that work can be reinforced and extended on the gym floor. Advanced sessions incorporate the NXPro by Neux Technologies, an FDA-cleared electrical neuromuscular stimulation device that bridges the gap between treatment and training. By pairing NeuX Stim with targeted exercise, the newly activated muscles are immediately loaded and strengthened, accelerating results and building the neuromuscular foundation that makes progress stick.
           </p>
         </div>
       </div>
