@@ -4,7 +4,7 @@ import Image from "next/image";
 const links = [
   { label: "How It Works", href: "/#how-it-works" },
   { label: "Who It Helps", href: "/#who-it-helps" },
-  { label: "First Vhref: "/#first-visit" },
+  { label: "First Visit", href: "/#first-visit" },
   { label: "About", href: "/#about" },
 ];
 export default function Nav() {
