@@ -30,7 +30,7 @@ export default function WhatMakesUsDifferent() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Your Practitioner</p>
             <h3 style={{ fontSize: "1.7rem", color: "var(--text)", marginBottom: 18, textTransform: "none", letterSpacing: "-0.01em" }}>Cameron Hunt</h3>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 14 }}>
-              Cameron founded Ohio Muscle Activation after his own lower-body injury progressed into severe sciatica and the usual treatment route failed to fully solve the problem. Finding Muscle Activation Techniques changed the trajectory of his recovery — and eventually changed his career path.
+              Cameron founded Ohio Muscle Activation after his own lower-body injury progressed into severe sciatica and the usual treatment route failed to fully solve the problem. Finding Muscle Activation Techniques changed the trajectory of his recovery, and eventually changed his career path.
             </p>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 28 }}>
               Today, he blends MATRx training with a personal training and golf-performance background, giving clients a higher-level neuromuscular experience built for both chronic-pain cases and active adults who want to keep performing at their best.
