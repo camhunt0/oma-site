@@ -67,11 +67,15 @@ h1, h2, h3, h4 {
 }
 
 .reveal {
-  opacity: 0;
-  transform: translateY(20px);
+  opacity: 1;
+  transform: translateY(0);
   transition: opacity 0.55s ease, transform 0.55s ease;
 }
-.reveal.visible {
+.reveal.animate {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.reveal.animate.visible {
   opacity: 1;
   transform: translateY(0);
 }
