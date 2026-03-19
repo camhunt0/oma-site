@@ -21,7 +21,7 @@ export default function Footer({ showCTA = true }: { showCTA?: boolean }) {
       )}
       <div style={{ padding: "28px 48px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 18, borderTop: "1px solid var(--border)" }}>
         <div>
-          <a href="#" style={{ display: "flex", alignItems: "center", textDecoration: "none", marginBottom: 6 }}>
+          <a href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none", marginBottom: 6 }}>
             <Image src="/logo-white.png" alt="Ohio Muscle Activation" width={150} height={44} style={{ height: "28px", width: "auto", opacity: 0.7 }} />
           </a>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", color: "var(--dim)" }}>10516 Sawmill Rd, Suite B · Powell, OH 43065</p>

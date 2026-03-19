@@ -2,10 +2,10 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 const links = [
-  { label: "How It Works", href: "#how-it-works" },
-  { label: "Who It Helps", href: "#who-it-helps" },
-  { label: "First Visit", href: "#first-visit" },
-  { label: "About", href: "#about" },
+  { label: "How It Works", href: "/#how-it-works" },
+  { label: "Who It Helps", href: "/#who-it-helps" },
+  { label: "First Vhref: "/#first-visit" },
+  { label: "About", href: "/#about" },
 ];
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,7 +30,7 @@ export default function Nav() {
         borderBottom: "2px solid #cc1818",
         transition: "background 0.3s",
       }}>
-        <a href="#" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
+        <a href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
           <Image src="/logo-white.png" alt="Ohio Muscle Activation" width={200} height={58}
             style={{ height: "44px", width: "auto" }} priority />
         </a>
@@ -48,7 +48,7 @@ export default function Nav() {
             border: "1px solid rgba(255,255,255,0.15)", padding: "9px 18px",
             textDecoration: "none", letterSpacing: "0.05em", textTransform: "uppercase",
           }}>(614) 946-9071</a>
-          <a href="#booking" style={{
+          <a href="/#booking" style={{
             fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.75rem",
             color: "var(--text)", background: "var(--red)",
             padding: "10px 20px", textDecoration: "none",
@@ -74,7 +74,7 @@ export default function Nav() {
               padding: "16px 0", borderBottom: "1px solid var(--border)",
             }}>{label}</a>
           ))}
-          <a href="#booking" onClick={() => setMenuOpen(false)} style={{
+          <a href="/#booking" onClick={() => setMenuOpen(false)} style={{
             display: "inline-flex", alignItems: "center", justifyContent: "center",
             background: "var(--red)", color: "var(--text)",
             fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.9rem",
