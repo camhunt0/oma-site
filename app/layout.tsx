@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ScrollReveal from "./components/ScrollReveal";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Ohio Muscle Activation | Powell, Dublin & Columbus, Ohio | MAT Specialist",
@@ -167,7 +168,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
       </head>
-      <body><ScrollReveal />{children}</body>
+      <body><ScrollReveal />{children}<Analytics /></body>
     </html>
   );
 }
