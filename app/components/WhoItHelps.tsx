@@ -17,12 +17,12 @@ export default function WhoItHelps() {
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2, marginBottom: 2 }}>
           {segments.map((s, i) => (
-            <div key={i} style={{ padding: "32px 28px", background: "var(--surface)", border: "1px solid var(--border)" }}>
+            <a key={i} href={s.href} style={{ padding: "32px 28px", background: "var(--surface)", border: "1px solid var(--border)", display: "block", textDecoration: "none", color: "inherit", transition: "border-color 0.2s" }} onMouseOver={(e) => { e.currentTarget.style.borderColor = "var(--red)"; }} onMouseOut={(e) => { e.currentTarget.style.borderColor = "var(--border)"; }}>
               <div style={{ fontSize: "1.4rem", marginBottom: 12 }}>{s.icon}</div>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--red)", marginBottom: 10 }}>{s.label}</p>
               <h3 style={{ fontSize: "0.95rem", color: "var(--text)", marginBottom: 10, lineHeight: 1.3 }}>{s.headline}</h3>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)", lineHeight: 1.65 }}>{s.detail}</p>
-            </div>
+            </a>
           ))}
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2 }}>
