@@ -5,7 +5,7 @@ const includes = [
   "Plain-language explanation of what we find",
   "Clarity on which muscles have lost their neurological signal, and what that's causing",
   "A clear recommendation with no pressure to continue",
-  "HSA funds accepted · Insurance not accepted",
+  "1 hour · No hidden fees · No tipping",
 ];
 
 export default function Diagnostic() {
@@ -47,7 +47,7 @@ export default function Diagnostic() {
           <div style={{ padding: "20px 24px", background: "var(--bg)", border: "1px solid var(--border)", borderLeft: "3px solid var(--red)" }}>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--dim)", marginBottom: 6 }}>Investment</p>
             <p style={{ fontFamily: "var(--font-display)", fontSize: "1.8rem", color: "var(--red)", fontWeight: 900 }}>$200</p>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)", marginTop: 4 }}>HSA funds accepted · Insurance not accepted</p>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)", marginTop: 4 }}>1 hour · No hidden fees · No tipping</p>
           </div>
         </div>
         <div>
