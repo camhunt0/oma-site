@@ -12,11 +12,11 @@ export default function Footer({ showCTA = true }: { showCTA?: boolean }) {
             <a href="#booking" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 28px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>
               Schedule a Diagnostic
             </a>
-            <a href="tel:6149469071" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", border: "1px solid rgba(255,255,255,0.2)", color: "var(--text)", fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.85rem", padding: "14px 22px", textDecoration: "none", letterSpacing: "0.04em" }}>
-              Call (614) 946-9071
+            <a href="sms:6149469071" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", border: "1px solid rgba(255,255,255,0.2)", color: "var(--text)", fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.85rem", padding: "14px 22px", textDecoration: "none", letterSpacing: "0.04em" }}>
+              Text (614) 946-9071
             </a>
           </div>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--dim)", marginTop: 16 }}>$XX diagnostic · Credited toward treatment · No obligation</p>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--dim)", marginTop: 16 }}>$200 diagnostic · HSA accepted · Insurance not accepted</p>
         </div>
       )}
       <div style={{ padding: "28px 48px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 18, borderTop: "1px solid var(--border)" }}>

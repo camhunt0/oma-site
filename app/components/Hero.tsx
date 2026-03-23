@@ -30,7 +30,7 @@ export default function Hero() {
             </a>
           </div>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--dim)", marginBottom: 28, animation: "fadeUp 0.6s 0.5s ease both" }}>
-            A focused evaluation to identify what's holding your body back. Credited toward treatment if you continue.
+            A focused evaluation to identify what's holding your body back. HSA funds accepted.
           </p>
         </div>
         <div style={{ display: "grid", gap: 14, animation: "fadeUp 0.7s 0.3s ease both" }}>
@@ -46,7 +46,7 @@ export default function Hero() {
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2 }}>
             {[
               { label: "Location", value: "10516 Sawmill Rd, Suite B" },
-              { label: "Call", value: "(614) 946-9071" },
+              { label: "Text", value: "(614) 946-9071" },
               { label: "Style", value: "Private 1-on-1" },
             ].map(s => (
               <div key={s.label} style={{ padding: "14px 16px", background: "var(--surface)", border: "1px solid var(--border)" }}>

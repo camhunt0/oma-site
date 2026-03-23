@@ -5,7 +5,7 @@ const includes = [
   "Plain-language explanation of what we find",
   "Clarity on which muscles have lost their neurological signal, and what that's causing",
   "A clear recommendation with no pressure to continue",
-  "Fee credited toward treatment if you move forward",
+  "HSA funds accepted · Insurance not accepted",
 ];
 
 export default function Diagnostic() {
@@ -46,8 +46,8 @@ export default function Diagnostic() {
           </div>
           <div style={{ padding: "20px 24px", background: "var(--bg)", border: "1px solid var(--border)", borderLeft: "3px solid var(--red)" }}>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--dim)", marginBottom: 6 }}>Investment</p>
-            <p style={{ fontFamily: "var(--font-display)", fontSize: "1.8rem", color: "var(--red)", fontWeight: 900 }}>$XX</p>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)", marginTop: 4 }}>Fully credited toward treatment if you continue</p>
+            <p style={{ fontFamily: "var(--font-display)", fontSize: "1.8rem", color: "var(--red)", fontWeight: 900 }}>$200</p>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)", marginTop: 4 }}>HSA funds accepted · Insurance not accepted</p>
           </div>
         </div>
         <div>
@@ -78,7 +78,7 @@ export default function Diagnostic() {
             <div style={{ display: "flex", gap: 10, alignItems: "flex-start" }}>
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" style={{ flexShrink: 0, marginTop: 2 }}><circle cx="7" cy="7" r="6" stroke="var(--dim)" strokeWidth="1" /><path d="M7 6v3M7 4.5v.3" stroke="var(--dim)" strokeWidth="1.1" strokeLinecap="round" /></svg>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.78rem", color: "var(--dim)", lineHeight: 1.6 }}>
-                Prefer to call? Reach Cameron directly at <a href="tel:6149469071" style={{ color: "var(--muted)" }}>(614) 946-9071</a>. No obligation after the diagnostic. You'll leave with clarity on what was found and whether continuing care makes sense.
+                Prefer to text? Reach Cameron directly at <a href="sms:6149469071" style={{ color: "var(--muted)" }}>(614) 946-9071</a>. No obligation after the diagnostic. You'll leave with clarity on what was found and whether continuing care makes sense.
               </p>
             </div>
           </div>

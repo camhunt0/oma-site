@@ -54,8 +54,8 @@ export default function LocalClose() {
               <a href="#booking" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "14px 26px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>
                 Schedule a Diagnostic →
               </a>
-              <a href="tel:6149469071" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", border: "1px solid rgba(255,255,255,0.15)", color: "var(--text)", fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.85rem", padding: "13px 22px", textDecoration: "none" }}>
-                Call (614) 946-9071
+              <a href="sms:6149469071" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", border: "1px solid rgba(255,255,255,0.15)", color: "var(--text)", fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.85rem", padding: "13px 22px", textDecoration: "none" }}>
+                Text (614) 946-9071
               </a>
             </div>
           </div>

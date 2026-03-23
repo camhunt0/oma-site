@@ -42,7 +42,7 @@ export default function Nav() {
               letterSpacing: "0.06em", textTransform: "uppercase",
             }}>{label}</a>
           ))}
-          <a href="tel:6149469071" style={{
+          <a href="sms:6149469071" style={{
             fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.78rem",
             color: "var(--text)", background: "transparent",
             border: "1px solid rgba(255,255,255,0.15)", padding: "9px 18px",
