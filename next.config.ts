@@ -9,7 +9,12 @@ const nextConfig: NextConfig = {
       // Legacy .html redirects from old Weebly site
       {
         source: "/muscleactivationtechniques.html",
-        destination: "/muscleactivationtechniques",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/muscleactivationtechniques",
+        destination: "/",
         permanent: true,
       },
       {
@@ -27,7 +32,6 @@ const nextConfig: NextConfig = {
         destination: "/",
         permanent: true,
       },
-      // Legacy bare paths
       {
         source: "/index",
         destination: "/",
