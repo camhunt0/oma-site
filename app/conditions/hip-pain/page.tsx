@@ -3,6 +3,9 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/conditions/hip-pain",
+  },
   title: "Hip Pain | Muscle Activation Techniques | Powell, Ohio",
   description: "Chronic hip pain in golfers, runners, and active adults often traces back to muscles that have lost their neurological signal. Ohio Muscle Activation uses MAT to find the source and restore proper function. Serving Powell, Dublin and Columbus.",
   openGraph: {

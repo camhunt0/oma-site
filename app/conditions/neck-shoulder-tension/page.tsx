@@ -3,6 +3,9 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/conditions/neck-shoulder-tension",
+  },
   title: "Neck and Shoulder Tension | Muscle Activation Techniques | Powell, Ohio",
   description: "Chronic neck and shoulder tension that keeps coming back after massage or stretching is often a neurological problem. Ohio Muscle Activation uses MAT to identify which muscles went offline and restore the signal. Serving Powell, Dublin and Columbus.",
   openGraph: {

@@ -3,6 +3,9 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/conditions/chronic-pain",
+  },
   title: "Chronic Pain | Muscle Activation Techniques | Powell, Ohio",
   description: "If your imaging is clean but you are still in pain, that is a neurological problem. Ohio Muscle Activation evaluates the whole body to find where the system broke down and restore function. Serving Powell, Dublin and Columbus.",
   openGraph: {

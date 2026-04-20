@@ -3,6 +3,9 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/conditions/post-surgical-recovery",
+  },
   title: "Post-Surgical Recovery | Muscle Activation Techniques | Powell, Ohio",
   description: "Muscles shut down after surgery and do not always come back on their own. Ohio Muscle Activation uses MAT to restore the neurological signal to muscles that stopped firing after injury or surgery. Serving Powell, Dublin and Columbus.",
   openGraph: {

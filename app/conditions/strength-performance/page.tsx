@@ -3,6 +3,9 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/conditions/strength-performance",
+  },
   title: "Strength and Performance | Muscle Activation Techniques | Powell, Ohio",
   description: "MAT increases muscle contractile ability, which directly produces strength gains and better performance. Active adults in Powell, Dublin, and Columbus use MAT proactively to care for their neuromuscular system before pain becomes the reason.",
   openGraph: {

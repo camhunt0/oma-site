@@ -4,6 +4,10 @@ import ScrollReveal from "./components/ScrollReveal";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.ohiomuscleactivation.com"),
+  alternates: {
+    canonical: "/",
+  },
   title: "Ohio Muscle Activation | Powell, Dublin & Columbus, Ohio | MAT Specialist",
   description:
     "You've stretched. You've done PT. But it keeps coming back. Ohio Muscle Activation identifies which muscles your body has shut down and restores them. Serving Powell, Dublin & Columbus since 2018.",
@@ -13,7 +17,7 @@ export const metadata: Metadata = {
     title: "Ohio Muscle Activation | Powell, Dublin & Columbus, Ohio",
     description:
       "Identify and restore the muscles your body has stopped using. 1-on-1 MAT sessions in Powell, Ohio.",
-    url: "https://ohiomuscleactivation.com",
+    url: "https://www.ohiomuscleactivation.com",
     siteName: "Ohio Muscle Activation",
     locale: "en_US",
     type: "website",

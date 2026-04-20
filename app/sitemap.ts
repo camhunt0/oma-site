@@ -11,7 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: `${base}/conditions/neck-shoulder-tension`,
+      url: `${base}/conditions/chronic-pain`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -23,7 +23,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${base}/conditions/chronic-pain`,
+      url: `${base}/conditions/hip-pain`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/conditions/neck-shoulder-tension`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${base}/conditions/post-surgical-recovery`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

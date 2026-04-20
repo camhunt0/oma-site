@@ -3,6 +3,9 @@ import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
 
 export const metadata: Metadata = {
+  alternates: {
+    canonical: "/conditions/golf-performance",
+  },
   title: "Golf Performance | Muscle Activation Techniques | Powell, Ohio",
   description: "Most swing limitations are neurological, not technical. Ohio Muscle Activation uses MAT to restore hip rotation, shoulder turn, and full-body sequencing so golfers in Powell, Dublin, and Columbus can unlock a new level of their game.",
   openGraph: {
