@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/conditions/post-surgical-recovery",
   },
-  title: "Post-Surgical Recovery | Muscle Activation Techniques | Powell, Ohio",
-  description: "Muscles shut down after surgery and do not always come back on their own. Ohio Muscle Activation uses MAT to restore the neurological signal to muscles that stopped firing after injury or surgery. Serving Powell, Dublin and Columbus.",
+  title: "Post-Surgical Recovery | Muscle Activation Powell OH",
+  description: "Rebuild strength and reconnect muscles after surgery with Muscle Activation Techniques in Powell, OH. A gentle, targeted path back to full movement.",
   openGraph: {
     title: "Post-Surgical Recovery | Ohio Muscle Activation",
     description: "Surgery fixes the structure. MAT restores the neurological signal so muscles can fire again.",

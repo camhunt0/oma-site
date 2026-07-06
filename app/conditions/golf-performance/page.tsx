@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/conditions/golf-performance",
   },
-  title: "Golf Performance | Muscle Activation Techniques | Powell, Ohio",
-  description: "Most swing limitations are neurological, not technical. Ohio Muscle Activation uses MAT to restore hip rotation, shoulder turn, and full-body sequencing so golfers in Powell, Dublin, and Columbus can unlock a new level of their game.",
+  title: "Golf Performance Training | MAT Powell, OH",
+  description: "Add distance and consistency to your game. Muscle Activation Techniques improves golf mobility and power for players near Powell & Columbus, OH.",
   openGraph: {
     title: "Golf Performance | Ohio Muscle Activation",
     description: "Your swing ceiling is neurological. MAT has repeatedly increased yardage and range of motion for golfers by restoring the muscles that drive rotation and power.",

@@ -6,8 +6,8 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/conditions/strength-performance",
   },
-  title: "Strength and Performance | Muscle Activation Techniques | Powell, Ohio",
-  description: "MAT increases muscle contractile ability, which directly produces strength gains and better performance. Active adults in Powell, Dublin, and Columbus use MAT proactively to care for their neuromuscular system before pain becomes the reason.",
+  title: "Strength & Athletic Performance | MAT Powell, OH",
+  description: "Unlock stronger, more responsive muscles with Muscle Activation Techniques. Improve performance and reduce injury risk in Powell & Columbus, OH.",
   openGraph: {
     title: "Strength and Performance | Ohio Muscle Activation",
     description: "You do not have to be in pain to benefit from MAT. Proactive neuromuscular care raises the stress threshold, increases contractile strength, and builds a body that performs consistently.",
