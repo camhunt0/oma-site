@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 
 export default function WhoItHelps() {
   const segments = [
@@ -14,14 +15,14 @@ export default function WhoItHelps() {
     <section id="who-it-helps" style={{ padding: "100px 48px", background: "var(--bg)", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <div style={{ maxWidth: 600, marginBottom: 56 }}>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Who This Is For</p>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>Who This Is For</p>
           <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 16 }}>People who are done guessing and ready for a neurological answer.</h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75 }}>Ohio Muscle Activation is often the next step for clients who have already done a lot of the right things but still can't get lasting change.</p>
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2, marginBottom: 2 }}>
           {segments.map((s, i) => (
-            <a
+            <Link
               key={i}
               href={s.href}
               style={{ padding: "32px 28px", background: "var(--surface)", border: "1px solid var(--border)", display: "block", textDecoration: "none", color: "inherit", transition: "border-color 0.2s" }}
@@ -29,18 +30,18 @@ export default function WhoItHelps() {
               onMouseLeave={(e) => { e.currentTarget.style.borderColor = "var(--border)"; }}
             >
               <div style={{ fontSize: "1.4rem", marginBottom: 12 }}>{s.icon}</div>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--red)", marginBottom: 10 }}>{s.label}</p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 10 }}>{s.label}</p>
               <h3 style={{ fontSize: "0.95rem", color: "var(--text)", marginBottom: 10, lineHeight: 1.3 }}>{s.headline}</h3>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)", lineHeight: 1.65, marginBottom: 14 }}>{s.detail}</p>
-              <span style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", color: "var(--red)", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>Learn more →</span>
-            </a>
+              <span style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", color: "var(--red-text)", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>Learn more →</span>
+            </Link>
           ))}
         </div>
 
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2 }}>
           <div style={{ padding: "32px 36px", background: "var(--surface)", border: "1px solid var(--border)", borderLeft: "3px solid var(--red)", display: "flex", flexDirection: "column", justifyContent: "center", gap: 20 }}>
             <div>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--red)", marginBottom: 12 }}>Arnold Sports Festival</p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 12 }}>Arnold Sports Festival</p>
               <p style={{ fontFamily: "var(--font-display)", fontSize: "2.2rem", fontWeight: 900, color: "var(--text)", lineHeight: 1.05, marginBottom: 16 }}>50+<br /><span style={{ fontSize: "0.85rem", letterSpacing: "0.04em", fontWeight: 900 }}>Elite Athletes</span></p>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.88rem", color: "var(--muted)", lineHeight: 1.75 }}>
                 Cameron worked with world-class XPC Powerlifting competitors from Sweden, British Columbia, and across the US. Every athlete tested had neuromuscular weaknesses limiting their movement. Multiple athletes hit PRs on their lifts the same day.
@@ -51,9 +52,8 @@ export default function WhoItHelps() {
             </p>
           </div>
           <div style={{ background: "var(--surface2)", border: "1px solid var(--border)", overflow: "hidden" }}>
-            <video controls autoPlay muted playsInline preload="metadata" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", minHeight: 280 }}>
-              <source src="/arnold-testimonial.mp4" type="video/mp4" />
-              <source src="/arnold-testimonial.mov" type="video/quicktime" />
+            <video controls playsInline preload="none" poster="/arnold-poster.jpg" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block", minHeight: 280 }}>
+              <source src="/arnold-testimonial-540.mp4" type="video/mp4" />
               Your browser does not support the video tag.
             </video>
           </div>

@@ -1,6 +1,7 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 const links = [
   { label: "How It Works", href: "/#how-it-works" },
   { label: "Who It Helps", href: "/#who-it-helps" },
@@ -10,6 +11,7 @@ const links = [
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const toggleRef = useRef<HTMLButtonElement>(null);
   useEffect(() => {
     const h = () => setScrolled(window.scrollY > 40);
     window.addEventListener("scroll", h);
@@ -18,6 +20,17 @@ export default function Nav() {
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
     return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
+  useEffect(() => {
+    if (!menuOpen) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        setMenuOpen(false);
+        toggleRef.current?.focus();
+      }
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
   }, [menuOpen]);
   return (
     <>
@@ -30,17 +43,17 @@ export default function Nav() {
         borderBottom: "2px solid #cc1818",
         transition: "background 0.3s",
       }}>
-        <a href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
+        <Link href="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
           <Image src="/logo-white.png" alt="Ohio Muscle Activation" width={200} height={58}
             style={{ height: "44px", width: "auto" }} priority />
-        </a>
+        </Link>
         <div style={{ display: "flex", alignItems: "center", gap: 28 }} className="nav-desktop">
           {links.map(({ label, href }) => (
-            <a key={label} href={href} style={{
+            <Link key={label} href={href} style={{
               fontFamily: "var(--font-body)", fontSize: "0.8rem", fontWeight: 500,
               color: "var(--muted)", textDecoration: "none",
               letterSpacing: "0.06em", textTransform: "uppercase",
-            }}>{label}</a>
+            }}>{label}</Link>
           ))}
           <a href="sms:6149469071" style={{
             fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.78rem",
@@ -48,39 +61,40 @@ export default function Nav() {
             border: "1px solid rgba(255,255,255,0.15)", padding: "9px 18px",
             textDecoration: "none", letterSpacing: "0.05em", textTransform: "uppercase",
           }}>(614) 946-9071</a>
-          <a href="/#booking" style={{
+          <Link href="/#booking" style={{
             fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.75rem",
             color: "var(--text)", background: "var(--red)",
             padding: "10px 20px", textDecoration: "none",
             letterSpacing: "0.07em", textTransform: "uppercase",
-          }}>Book Diagnostic</a>
+          }}>Book Diagnostic</Link>
         </div>
-        <button onClick={() => setMenuOpen(p => !p)}
+        <button ref={toggleRef} onClick={() => setMenuOpen(p => !p)}
           style={{ display: "none", background: "none", border: "1px solid rgba(255,255,255,0.15)", color: "var(--text)", padding: "8px 12px", fontSize: "1.2rem", cursor: "pointer" }}
-          className="nav-toggle" aria-label="Toggle menu">
+          className="nav-toggle" aria-label={menuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={menuOpen} aria-controls="mobile-menu">
           {menuOpen ? "✕" : "☰"}
         </button>
       </nav>
       {menuOpen && (
-        <div style={{
+        <div id="mobile-menu" role="dialog" aria-label="Site navigation" style={{
           position: "fixed", top: 66, left: 0, right: 0, bottom: 0, zIndex: 99,
           background: "rgba(10,10,10,0.98)", backdropFilter: "blur(12px)",
           display: "flex", flexDirection: "column", padding: "32px 40px", gap: 4,
         }}>
           {links.map(({ label, href }) => (
-            <a key={label} href={href} onClick={() => setMenuOpen(false)} style={{
+            <Link key={label} href={href} onClick={() => setMenuOpen(false)} style={{
               fontFamily: "var(--font-display)", fontSize: "1.4rem", fontWeight: 900,
               color: "var(--text)", textDecoration: "none", textTransform: "uppercase",
               padding: "16px 0", borderBottom: "1px solid var(--border)",
-            }}>{label}</a>
+            }}>{label}</Link>
           ))}
-          <a href="/#booking" onClick={() => setMenuOpen(false)} style={{
+          <Link href="/#booking" onClick={() => setMenuOpen(false)} style={{
             display: "inline-flex", alignItems: "center", justifyContent: "center",
             background: "var(--red)", color: "var(--text)",
             fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.9rem",
             padding: "16px", textDecoration: "none", letterSpacing: "0.07em",
             textTransform: "uppercase", marginTop: 24,
-          }}>Book Diagnostic</a>
+          }}>Book Diagnostic</Link>
         </div>
       )}
       <style>{`

@@ -25,7 +25,7 @@ export default function ReferralModule() {
     <section style={{ padding: "100px 48px", background: "var(--surface2)", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px 80px", alignItems: "start" }}>
         <div>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>For Referred Clients</p>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>For Referred Clients</p>
           <h2 style={{ fontSize: "clamp(1.6rem,2.8vw,2.3rem)", color: "var(--text)", marginBottom: 18 }}>Built to fit alongside doctors, PTs, trainers, and coaches.</h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75, marginBottom: 14 }}>
             Ohio Muscle Activation complements a client's existing care team by addressing muscle function and movement quality when other smart providers still see a gap.

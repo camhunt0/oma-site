@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
+import FaqSchema from "../../components/FaqSchema";
 
 export const metadata: Metadata = {
   alternates: {
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Neck and Shoulder Tension | Ohio Muscle Activation",
     description: "Chronic neck and shoulder tension that returns despite treatment is often a neurological problem, not a structural one. MAT restores the signal.",
-    url: "https://ohiomuscleactivation.com/conditions/neck-shoulder-tension",
+    url: "/conditions/neck-shoulder-tension",
   },
 };
 
@@ -35,30 +37,31 @@ const faqs = [
   { q: "How is this different from chiropractic care?", a: "Chiropractic addresses joint alignment and mobility. MAT addresses the neurological signal to the muscles surrounding those joints. When muscles lose their signal, they cannot provide the stability a joint needs. The adjustment may not hold long-term if the muscular support system is not functioning properly. Many chiropractors refer clients to MAT for exactly this reason." },
 ];
 
-const sectionLabel: React.CSSProperties = { fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 };
+const sectionLabel: React.CSSProperties = { fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 };
 const bodyText: React.CSSProperties = { fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 };
-const bookingHref = "https://oma-site-zeta.vercel.app/#booking";
+const bookingHref = "/#booking";
 
 export default function NeckShoulderTension() {
   return (
     <>
       <Nav />
+      <FaqSchema faqs={faqs} path="/conditions/neck-shoulder-tension" />
       <main style={{ paddingTop: 66 }}>
         <section style={{ padding: "80px 48px 72px", background: "#0d0d0d", borderBottom: "2px solid var(--red)", position: "relative", overflow: "hidden" }}>
           <div style={{ position: "absolute", top: 0, right: 0, width: "40%", height: "100%", background: "linear-gradient(to left, rgba(204,24,24,0.07), transparent)", zIndex: 0 }} />
           <div style={{ maxWidth: 1100, margin: "0 auto", position: "relative", zIndex: 1 }}>
-            <a href="https://oma-site-zeta.vercel.app/#who-it-helps" style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", color: "var(--dim)", textDecoration: "none", letterSpacing: "0.08em", textTransform: "uppercase", display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 28 }}>Back to Who It Helps</a>
+            <Link href="/#who-it-helps" style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", color: "var(--dim)", textDecoration: "none", letterSpacing: "0.08em", textTransform: "uppercase", display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 28 }}>Back to Who It Helps</Link>
             <p style={sectionLabel}>Condition</p>
             <h1 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.4rem,5vw,4.2rem)", color: "var(--text)", lineHeight: 1.08, marginBottom: 24, maxWidth: 700 }}>Neck and Shoulder Tension</h1>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "1.1rem", color: "var(--muted)", lineHeight: 1.8, maxWidth: 620, marginBottom: 36 }}>
               Chronic neck and shoulder tension that returns despite massage, stretching, or chiropractic care is almost always a neurological problem. The muscles you feel are not the source. They are compensating for muscles that stopped doing their job.
             </p>
-            <a href={bookingHref} style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 28px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>Book a Muscle Check Diagnostic</a>
+            <Link href={bookingHref} style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 28px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>Book a Muscle Check Diagnostic</Link>
           </div>
         </section>
 
         <section style={{ padding: "88px 48px", background: "var(--surface)", borderTop: "1px solid var(--border)" }}>
-          <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px 100px", alignItems: "start" }}>
+          <div className="grid-2" style={{ maxWidth: 1100, margin: "0 auto", gap: "60px 100px", alignItems: "start" }}>
             <div>
               <p style={sectionLabel}>Why It Keeps Returning</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "var(--text)", marginBottom: 20 }}>The muscles you feel are not the problem. They are covering for it.</h2>
@@ -67,7 +70,7 @@ export default function NeckShoulderTension() {
               <p style={{ ...bodyText, marginBottom: 28 }}>MAT identifies exactly which muscles lost their signal and restores it directly. When the deep stabilizers come back online, the compensating muscles finally get to rest.</p>
               <div style={{ padding: "18px 22px", borderLeft: "3px solid var(--red)", background: "var(--red-dim)" }}>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "0.9rem", color: "var(--text)", fontStyle: "italic", lineHeight: 1.65 }}>"Cameron is professional and very knowledgeable. I have seen great value in my sessions with him starting with recovery from a golf injury to building and maintaining muscle strength. I am glad I found him."</p>
-                <p style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", color: "var(--red)", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", marginTop: 10 }}>Jack R. · Golfer · Client since 2018</p>
+                <p style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", color: "var(--red-text)", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase", marginTop: 10 }}>Jack R. · Golfer · Client since 2018</p>
               </div>
             </div>
             <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -88,7 +91,7 @@ export default function NeckShoulderTension() {
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "var(--text)", marginBottom: 20 }}>Restore the signal. Let the compensators rest.</h2>
               <p style={bodyText}>Most neck and shoulder treatment focuses on relaxing the tight muscles. MAT focuses on reactivating the muscles that should have been working all along. When the deep stabilizers come back online, the compensators naturally decompress and the chronic tension pattern resolves.</p>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2 }}>
+            <div className="grid-3" style={{ gap: 2 }}>
               {steps.map((s, i) => (
                 <div key={i} style={{ padding: "36px 32px", background: i === 1 ? "var(--surface2)" : "var(--surface)", border: "1px solid var(--border)", borderTop: i === 1 ? "3px solid var(--red)" : "1px solid var(--border)" }}>
                   <p style={{ fontFamily: "var(--font-display)", fontSize: "3rem", fontWeight: 900, color: "rgba(204,24,24,0.15)", lineHeight: 1, marginBottom: 20 }}>{s.num}</p>
@@ -119,7 +122,7 @@ export default function NeckShoulderTension() {
           <div style={{ maxWidth: 1100, margin: "0 auto" }}>
             <p style={sectionLabel}>Related Conditions</p>
             <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "var(--text)", marginBottom: 36 }}>Other areas we work with</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2 }}>
+            <div className="grid-3" style={{ gap: 2 }}>
               {[
                 { title: "Post-Surgical Recovery", desc: "Muscles that shut down after surgery and have not come back online despite PT and rehabilitation.", href: "/conditions/post-surgical-recovery" },
                 { title: "Hip Pain", desc: "Chronic hip pain in golfers, runners, and active adults that has not responded to stretching or therapy.", href: "/conditions/hip-pain" },
@@ -128,7 +131,7 @@ export default function NeckShoulderTension() {
                 <div key={i} style={{ padding: "28px", background: "var(--bg)", border: "1px solid var(--border)", borderTop: "2px solid var(--red)" }}>
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "0.95rem", color: "var(--text)", marginBottom: 10 }}>{c.title}</h3>
                   <p style={{ fontFamily: "var(--font-body)", fontSize: "0.83rem", color: "var(--muted)", lineHeight: 1.65, marginBottom: 14 }}>{c.desc}</p>
-                  <a href={c.href} style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--red)", textDecoration: "none", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>Learn more</a>
+                  <Link href={c.href} style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--red-text)", textDecoration: "none", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>Learn more</Link>
                 </div>
               ))}
             </div>
@@ -140,7 +143,7 @@ export default function NeckShoulderTension() {
             <p style={sectionLabel}>Ready to Find Answers</p>
             <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "var(--text)", marginBottom: 20 }}>Find out which muscles went offline and get them back.</h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75, marginBottom: 32 }}>A focused 1-on-1 evaluation to identify exactly which muscles have lost their signal and what that is causing in your neck and shoulders.</p>
-            <a href={bookingHref} style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 30px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>Book a Muscle Check Diagnostic</a>
+            <Link href={bookingHref} style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 30px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>Book a Muscle Check Diagnostic</Link>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--dim)", marginTop: 14 }}>Powell, Ohio · (614) 946-9071 · By appointment only</p>
           </div>
         </section>

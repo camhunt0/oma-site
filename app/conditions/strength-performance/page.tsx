@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import Nav from "../../components/Nav";
 import Footer from "../../components/Footer";
+import FaqSchema from "../../components/FaqSchema";
 
 export const metadata: Metadata = {
   alternates: {
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Strength and Performance | Ohio Muscle Activation",
     description: "You do not have to be in pain to benefit from MAT. Proactive neuromuscular care raises the stress threshold, increases contractile strength, and builds a body that performs consistently.",
-    url: "https://ohiomuscleactivation.com/conditions/strength-performance",
+    url: "/conditions/strength-performance",
   },
 };
 
@@ -35,30 +37,31 @@ const faqs = [
   { q: "How is MAT different from physical therapy or massage for wellness?", a: "Massage maintains soft tissue quality and reduces tension. Physical therapy addresses movement patterns and strength. MAT addresses the neurological signal that determines how well muscles can contract in the first place. They are complementary, but MAT works at a layer that the others do not reach." },
 ];
 
-const sectionLabel: React.CSSProperties = { fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 };
+const sectionLabel: React.CSSProperties = { fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 };
 const bodyText: React.CSSProperties = { fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 };
-const bookingHref = "https://oma-site-zeta.vercel.app/#booking";
+const bookingHref = "/#booking";
 
 export default function StrengthPerformance() {
   return (
     <>
       <Nav />
+      <FaqSchema faqs={faqs} path="/conditions/strength-performance" />
       <main style={{ paddingTop: 66 }}>
         <section style={{ padding: "80px 48px 72px", background: "#0d0d0d", borderBottom: "2px solid var(--red)", position: "relative", overflow: "hidden" }}>
           <div style={{ position: "absolute", top: 0, right: 0, width: "40%", height: "100%", background: "linear-gradient(to left, rgba(204,24,24,0.07), transparent)", zIndex: 0 }} />
           <div style={{ maxWidth: 1100, margin: "0 auto", position: "relative", zIndex: 1 }}>
-            <a href="https://oma-site-zeta.vercel.app/#who-it-helps" style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", color: "var(--dim)", textDecoration: "none", letterSpacing: "0.08em", textTransform: "uppercase", display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 28 }}>Back to Who It Helps</a>
+            <Link href="/#who-it-helps" style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", color: "var(--dim)", textDecoration: "none", letterSpacing: "0.08em", textTransform: "uppercase", display: "inline-flex", alignItems: "center", gap: 6, marginBottom: 28 }}>Back to Who It Helps</Link>
             <p style={sectionLabel}>Condition</p>
             <h1 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(2.4rem,5vw,4.2rem)", color: "var(--text)", lineHeight: 1.08, marginBottom: 24, maxWidth: 700 }}>Strength and Performance</h1>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "1.1rem", color: "var(--muted)", lineHeight: 1.8, maxWidth: 620, marginBottom: 36 }}>
               You do not have to wait for the check engine light to care for your neuromuscular system. Active adults who use MAT proactively train harder, recover faster, and maintain function longer because the system driving their performance is actually working at full capacity.
             </p>
-            <a href={bookingHref} style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 28px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>Book a Muscle Check Diagnostic</a>
+            <Link href={bookingHref} style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 28px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>Book a Muscle Check Diagnostic</Link>
           </div>
         </section>
 
         <section style={{ padding: "88px 48px", background: "var(--surface)", borderTop: "1px solid var(--border)" }}>
-          <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px 100px", alignItems: "start" }}>
+          <div className="grid-2" style={{ maxWidth: 1100, margin: "0 auto", gap: "60px 100px", alignItems: "start" }}>
             <div>
               <p style={sectionLabel}>Proactive Neuromuscular Care</p>
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "var(--text)", marginBottom: 20 }}>Most people come in when pain forces them to. The best time to come in is before it does.</h2>
@@ -84,7 +87,7 @@ export default function StrengthPerformance() {
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "var(--text)", marginBottom: 20 }}>Restore full contractile ability. Raise the threshold. Build toward lasting function.</h2>
               <p style={bodyText}>The goal for performance clients is not just fixing what is inhibited today. It is building a neuromuscular system that is progressively more capable of handling stress, recovering from training, and maintaining function under load over time.</p>
             </div>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2 }}>
+            <div className="grid-3" style={{ gap: 2 }}>
               {steps.map((s, i) => (
                 <div key={i} style={{ padding: "36px 32px", background: i === 1 ? "var(--surface2)" : "var(--surface)", border: "1px solid var(--border)", borderTop: i === 1 ? "3px solid var(--red)" : "1px solid var(--border)" }}>
                   <p style={{ fontFamily: "var(--font-display)", fontSize: "3rem", fontWeight: 900, color: "rgba(204,24,24,0.15)", lineHeight: 1, marginBottom: 20 }}>{s.num}</p>
@@ -97,9 +100,9 @@ export default function StrengthPerformance() {
         </section>
 
         <section style={{ padding: "88px 48px", background: "var(--surface)", borderTop: "1px solid var(--border)" }}>
-          <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "60px 100px", alignItems: "center" }}>
+          <div className="grid-2" style={{ maxWidth: 1100, margin: "0 auto", gap: "60px 100px", alignItems: "center" }}>
             <div style={{ padding: "32px", background: "var(--bg)", border: "1px solid var(--border)", borderLeft: "3px solid var(--red)" }}>
-              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>The Threshold Effect</p>
+              <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>The Threshold Effect</p>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>Think of the neuromuscular system as having a stress tolerance capacity. Every training session, stressful week, and accumulated demand draws from that capacity. When the demand exceeds it, muscles inhibit and function degrades.</p>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.8 }}>Consistent MAT raises the capacity itself. You get stronger not just in the muscles being reactivated, but in the system's overall ability to sustain function under load. Over time you train harder, recover faster, and stay in the window of peak function for longer between sessions.</p>
             </div>
@@ -108,7 +111,7 @@ export default function StrengthPerformance() {
               <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.6rem,2.8vw,2.2rem)", color: "var(--text)", marginBottom: 20 }}>The highest performers treat their neuromuscular system as an investment, not an emergency fund.</h2>
               <p style={bodyText}>The same way you build mobility work, soft tissue care, and recovery protocols into your routine, MAT fits as the layer that ensures the muscles driving everything else are actually contributing at full capacity.</p>
               <p style={{ ...bodyText, marginBottom: 28 }}>Clients who use MAT consistently describe it as the piece that makes everything else work better. Lifts improve. Runs feel easier. Recovery between sessions shortens. The body simply functions the way it is supposed to when the neurological foundation is intact.</p>
-              <a href={bookingHref} style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.8rem", padding: "13px 24px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>Book a Diagnostic</a>
+              <Link href={bookingHref} style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.8rem", padding: "13px 24px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>Book a Diagnostic</Link>
             </div>
           </div>
         </section>
@@ -132,7 +135,7 @@ export default function StrengthPerformance() {
           <div style={{ maxWidth: 1100, margin: "0 auto" }}>
             <p style={sectionLabel}>Related Conditions</p>
             <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "var(--text)", marginBottom: 36 }}>Other areas we work with</h2>
-            <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2 }}>
+            <div className="grid-3" style={{ gap: 2 }}>
               {[
                 { title: "Golf Performance", desc: "Restore the neuromuscular foundation that drives rotation, sequencing, and consistency in the swing.", href: "/conditions/golf-performance" },
                 { title: "Hip Pain", desc: "Chronic hip pain in active adults that has not responded to stretching, therapy, or rest.", href: "/conditions/hip-pain" },
@@ -141,7 +144,7 @@ export default function StrengthPerformance() {
                 <div key={i} style={{ padding: "28px", background: "var(--bg)", border: "1px solid var(--border)", borderTop: "2px solid var(--red)" }}>
                   <h3 style={{ fontFamily: "var(--font-display)", fontSize: "0.95rem", color: "var(--text)", marginBottom: 10 }}>{c.title}</h3>
                   <p style={{ fontFamily: "var(--font-body)", fontSize: "0.83rem", color: "var(--muted)", lineHeight: 1.65, marginBottom: 14 }}>{c.desc}</p>
-                  <a href={c.href} style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--red)", textDecoration: "none", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>Learn more</a>
+                  <Link href={c.href} style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--red-text)", textDecoration: "none", fontWeight: 700, letterSpacing: "0.06em", textTransform: "uppercase" }}>Learn more</Link>
                 </div>
               ))}
             </div>
@@ -153,7 +156,7 @@ export default function StrengthPerformance() {
             <p style={sectionLabel}>Ready to Perform at Your Best</p>
             <h2 style={{ fontFamily: "var(--font-display)", fontSize: "clamp(1.8rem,3vw,2.4rem)", color: "var(--text)", marginBottom: 20 }}>Find out which muscles are limiting your performance and get them back online.</h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75, marginBottom: 32 }}>A focused 1-on-1 evaluation to identify the neuromuscular gaps between your current function and your actual potential.</p>
-            <a href={bookingHref} style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 30px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>Book a Muscle Check Diagnostic</a>
+            <Link href={bookingHref} style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 30px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>Book a Muscle Check Diagnostic</Link>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.75rem", color: "var(--dim)", marginTop: 14 }}>Powell, Ohio · (614) 946-9071 · By appointment only</p>
           </div>
         </section>

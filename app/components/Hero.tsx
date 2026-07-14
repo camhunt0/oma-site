@@ -10,13 +10,13 @@ export default function Hero() {
       <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: 2, background: "var(--red)", zIndex: 2 }} />
       <div style={{ maxWidth: 1100, margin: "0 auto", position: "relative", zIndex: 1, display: "grid", gridTemplateColumns: "1.15fr 0.85fr", gap: 40, alignItems: "end" }}>
         <div>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 20, animation: "fadeUp 0.5s 0.1s ease both" }}>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 20, animation: "fadeUp 0.5s 0.1s ease both" }}>
             Powell, Ohio · MATRx Practitioner · 1-on-1 Care
           </p>
           <h1 style={{ fontSize: "clamp(2.8rem,6vw,5.4rem)", color: "var(--text)", lineHeight: 1.06, marginBottom: 22, animation: "fadeUp 0.6s 0.2s ease both" }}>
             You've stretched.<br />
             You've done PT.<br />
-            <span style={{ color: "var(--red)" }}>But it keeps<br />coming back.</span>
+            <span style={{ color: "var(--red-text)" }}>But it keeps<br />coming back.</span>
           </h1>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "1.05rem", fontWeight: 300, color: "var(--muted)", maxWidth: 540, lineHeight: 1.75, marginBottom: 32, animation: "fadeUp 0.6s 0.35s ease both" }}>
             Your body is a neurological system. When a muscle is stressed, it stops sending signals to the brain, so other muscles compensate. Ohio Muscle Activation identifies which muscles have gone offline and restores their connection, 1-on-1, so movement feels stronger, cleaner, and more stable.
@@ -41,7 +41,7 @@ export default function Hero() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", fontStyle: "italic", color: "var(--text)", lineHeight: 1.6, marginBottom: 12 }}>
               "This was the first time I felt like someone actually fixed the root of the problem, not just treated the symptoms."
             </p>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", fontWeight: 700, color: "var(--red)", letterSpacing: "0.08em", textTransform: "uppercase" }}>— Kyle G. · Collegiate Golfer</p>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", fontWeight: 700, color: "var(--red-text)", letterSpacing: "0.08em", textTransform: "uppercase" }}>— Kyle G. · Collegiate Golfer</p>
           </div>
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2 }}>
             {[

@@ -12,7 +12,7 @@ export default function FirstVisit() {
     <section id="first-visit" style={{ padding: "100px 48px", background: "var(--surface)", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto", display: "grid", gridTemplateColumns: "1fr 1fr", gap: "72px 80px", alignItems: "start" }}>
         <div>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>What to Expect</p>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>What to Expect</p>
           <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 20 }}>Clear, calm, and specific. No pressure. No surprises.</h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75, marginBottom: 24 }}>
             The first appointment is designed to feel more like a premium diagnostic process than a rushed treatment slot. The goal isn't to trap someone into a package. It's to help them understand what's happening in their body.

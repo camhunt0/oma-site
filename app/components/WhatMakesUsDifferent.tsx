@@ -14,7 +14,7 @@ export default function WhatMakesUsDifferent() {
   return (
     <section style={{ padding: "100px 48px", background: "var(--surface)", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>What Makes Us Different</p>
+        <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>What Makes Us Different</p>
         <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 52 }}>A practitioner-led experience for people tired of generic care.</h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2, marginBottom: 2 }}>
           {pillars.map((p, i) => (
@@ -27,7 +27,7 @@ export default function WhatMakesUsDifferent() {
         </div>
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 2, border: "1px solid var(--border)" }}>
           <div style={{ padding: "44px 40px", borderRight: "1px solid var(--border)", background: "var(--bg)" }}>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Your Practitioner</p>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>Your Practitioner</p>
             <h3 style={{ fontSize: "1.7rem", color: "var(--text)", marginBottom: 18, textTransform: "none", letterSpacing: "-0.01em" }}>Cameron Hunt</h3>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 14 }}>
               Cameron founded Ohio Muscle Activation after his own lower-body injury progressed into severe sciatica and the usual treatment route failed to fully solve the problem. Finding Muscle Activation Techniques changed the trajectory of his recovery, and eventually changed his career path.

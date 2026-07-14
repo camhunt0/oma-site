@@ -29,7 +29,7 @@ export default function Diagnostic() {
         }}
       >
         <div>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Start Here</p>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>Start Here</p>
           <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 20 }}>Begin with a Muscle Check Diagnostic.</h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75, marginBottom: 28 }}>
             A focused, 1-on-1 evaluation designed to answer one question: which muscles have lost their neurological signal, and what is that causing in your body? You'll leave with clarity, not guesswork.
@@ -46,13 +46,13 @@ export default function Diagnostic() {
           </div>
           <div style={{ padding: "20px 24px", background: "var(--bg)", border: "1px solid var(--border)", borderLeft: "3px solid var(--red)" }}>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--dim)", marginBottom: 6 }}>Investment</p>
-            <p style={{ fontFamily: "var(--font-display)", fontSize: "1.8rem", color: "var(--red)", fontWeight: 900 }}>$200</p>
+            <p style={{ fontFamily: "var(--font-display)", fontSize: "1.8rem", color: "var(--red-text)", fontWeight: 900 }}>$200</p>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)", marginTop: 4 }}>1 hour · No hidden fees · No tipping</p>
           </div>
         </div>
         <div>
           <div style={{ background: "var(--bg)", border: "1px solid var(--border)", borderTop: "3px solid var(--red)", padding: "36px 32px" }}>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Schedule Online</p>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>Schedule Online</p>
             <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.3rem", color: "var(--text)", marginBottom: 20 }}>Book Your Diagnostic</h3>
 
             {/* Embed the widget iframe directly so it stays inside this card */}

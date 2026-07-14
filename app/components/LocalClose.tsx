@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 // Change #4: "Read Cameron's Story" removed (old site being shut down)
 // Change #7: Full address updated to include Powell, OH 43065
@@ -37,7 +36,7 @@ export default function LocalClose() {
 
           {/* Right — copy (Change #8: rewritten to make sense) */}
           <div>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Trusted Local Care</p>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>Trusted Local Care</p>
             <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 20 }}>Private, 1-on-1 neuromuscular care in Powell, Ohio.</h2>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 16 }}>
               Ohio Muscle Activation operates as a private, appointment-only clinic off Sawmill Road. No shared gym floor, no rushed sessions, no generic treatment protocols. Every appointment is one practitioner, one client, full focus.

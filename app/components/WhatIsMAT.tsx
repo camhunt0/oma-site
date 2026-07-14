@@ -8,7 +8,7 @@ export default function WhatIsMAT() {
     <section style={{ padding: "100px 48px", background: "var(--bg)", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <div style={{ maxWidth: 720, marginBottom: 56 }}>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>What Is MAT</p>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>What Is MAT</p>
           <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 20 }}>Your body is a neurological system.</h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "1.05rem", color: "var(--muted)", lineHeight: 1.8, marginBottom: 14 }}>
             When muscles fire, they send signals to the brain that drive healthy movement and performance. When a muscle is stressed or injured, it can stop firing, and other muscles step in to compensate. Those compensating muscles are the ones that feel tight and painful.
@@ -34,7 +34,7 @@ export default function WhatIsMAT() {
         {/* NeuX Stim callout */}
         <div style={{ display: "grid", gridTemplateColumns: "auto 1fr", gap: 32, alignItems: "center", padding: "28px 36px", background: "var(--surface)", border: "1px solid var(--border)", borderLeft: "3px solid var(--red)" }}>
           <div style={{ flexShrink: 0 }}>
-            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--red)", marginBottom: 8 }}>Advanced Sessions</p>
+            <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.16em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 8 }}>Advanced Sessions</p>
             <p style={{ fontFamily: "var(--font-display)", fontSize: "1rem", fontWeight: 900, color: "var(--text)", textTransform: "uppercase", letterSpacing: "0.02em", whiteSpace: "nowrap" }}>NeuX Stim</p>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.72rem", color: "var(--dim)", marginTop: 4, whiteSpace: "nowrap" }}>FDA-Cleared · NXPro Device</p>
           </div>

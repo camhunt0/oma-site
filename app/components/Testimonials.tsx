@@ -26,7 +26,7 @@ export default function Testimonials() {
     <section style={{ padding: "100px 48px", background: "var(--bg)", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         <div style={{ maxWidth: 600, marginBottom: 52 }}>
-          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Real Results</p>
+          <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>Real Results</p>
           <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 16 }}>What clients say after they finally get answers.</h2>
           <p style={{ fontFamily: "var(--font-body)", fontSize: "0.95rem", color: "var(--muted)", lineHeight: 1.75 }}>
             Serving clients of all ages in Powell, Dublin, and greater Columbus since 2018.
@@ -41,7 +41,7 @@ export default function Testimonials() {
                 <div style={{ width: 20, height: 2, background: "var(--red)" }} />
                 <div>
                   <p style={{ fontFamily: "var(--font-body)", fontWeight: 700, fontSize: "0.8rem", color: "var(--text)", textTransform: "uppercase", letterSpacing: "0.05em" }}>{t.name}</p>
-                  <p style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", color: "var(--red)", letterSpacing: "0.07em", textTransform: "uppercase" }}>{t.segment}</p>
+                  <p style={{ fontFamily: "var(--font-body)", fontSize: "0.7rem", color: "var(--red-text)", letterSpacing: "0.07em", textTransform: "uppercase" }}>{t.segment}</p>
                 </div>
               </div>
             </div>

@@ -10,7 +10,7 @@ export default function Gallery() {
   return (
     <section style={{ padding: "100px 48px", background: "var(--surface2)", borderTop: "1px solid var(--border)" }}>
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
-        <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red)", marginBottom: 16 }}>Inside the Experience</p>
+        <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>Inside the Experience</p>
         <h2 style={{ fontSize: "clamp(1.8rem,3vw,2.6rem)", color: "var(--text)", marginBottom: 16, maxWidth: 560 }}>Hands-on, highly specific care that feels premium from the first visit.</h2>
         <p style={{ fontFamily: "var(--font-body)", fontSize: "0.97rem", color: "var(--muted)", lineHeight: 1.75, maxWidth: 600, marginBottom: 40 }}>
           Private care, precise assessment, and a practitioner who works directly with each client, not a rushed, generic treatment flow.
