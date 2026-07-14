@@ -85,8 +85,8 @@ export interface ConditionData {
 
 export const conditions: Record<string, ConditionData> = {
   "chronic-pain": {
-    metaTitle: "Chronic Pain | Muscle Activation Techniques | Powell, Ohio",
-    metaDescription: "If your imaging is clean but you are still in pain, that is a neurological problem. Ohio Muscle Activation evaluates the whole body to find where the system broke down and restore function. Serving Powell, Dublin and Columbus.",
+    metaTitle: "Chronic Pain Relief | Muscle Activation Powell, OH",
+    metaDescription: "Address the root cause of chronic pain through Muscle Activation Techniques. Personalized, drug-free care in Powell, serving greater Columbus, OH.",
     ogTitle: "Chronic Pain | Ohio Muscle Activation",
     ogDescription: "Clean imaging does not mean the nervous system is working properly. MAT evaluates the whole body, restores function, and builds the system's tolerance to daily stress over time.",
     heroKicker: "Condition",
@@ -139,8 +139,8 @@ export const conditions: Record<string, ConditionData> = {
   },
 
   "golf-performance": {
-    metaTitle: "Golf Performance | Muscle Activation Techniques | Powell, Ohio",
-    metaDescription: "Most swing limitations are neurological, not technical. Ohio Muscle Activation uses MAT to restore hip rotation, shoulder turn, and full-body sequencing so golfers in Powell, Dublin, and Columbus can unlock a new level of their game.",
+    metaTitle: "Golf Performance Training | MAT Powell, OH",
+    metaDescription: "Add distance and consistency to your game. Muscle Activation Techniques improves golf mobility and power for players near Powell & Columbus, OH.",
     ogTitle: "Golf Performance | Ohio Muscle Activation",
     ogDescription: "Your swing ceiling is neurological. MAT has repeatedly increased yardage and range of motion for golfers by restoring the muscles that drive rotation and power.",
     heroKicker: "Condition",
@@ -285,8 +285,8 @@ export const conditions: Record<string, ConditionData> = {
   },
 
   "neck-shoulder-tension": {
-    metaTitle: "Neck and Shoulder Tension | Muscle Activation Techniques | Powell, Ohio",
-    metaDescription: "Chronic neck and shoulder tension that keeps coming back after massage or stretching is often a neurological problem. Ohio Muscle Activation uses MAT to identify which muscles went offline and restore the signal. Serving Powell, Dublin and Columbus.",
+    metaTitle: "Neck & Shoulder Tension Relief | MAT Powell, OH",
+    metaDescription: "Ease chronic neck and shoulder tension at the source. Muscle Activation Techniques in Powell, OH helps restore balance and lasting relief.",
     ogTitle: "Neck and Shoulder Tension | Ohio Muscle Activation",
     ogDescription: "Chronic neck and shoulder tension that returns despite treatment is often a neurological problem, not a structural one. MAT restores the signal.",
     heroKicker: "Condition",
@@ -340,8 +340,8 @@ export const conditions: Record<string, ConditionData> = {
   },
 
   "post-surgical-recovery": {
-    metaTitle: "Post-Surgical Recovery | Muscle Activation Techniques | Powell, Ohio",
-    metaDescription: "Muscles shut down after surgery and do not always come back on their own. Ohio Muscle Activation uses MAT to restore the neurological signal to muscles that stopped firing after injury or surgery. Serving Powell, Dublin and Columbus.",
+    metaTitle: "Post-Surgical Recovery | Muscle Activation Powell OH",
+    metaDescription: "Rebuild strength and reconnect muscles after surgery with Muscle Activation Techniques in Powell, OH. A gentle, targeted path back to full movement.",
     ogTitle: "Post-Surgical Recovery | Ohio Muscle Activation",
     ogDescription: "Surgery fixes the structure. MAT restores the neurological signal so muscles can fire again.",
     heroKicker: "Condition",
@@ -405,8 +405,8 @@ export const conditions: Record<string, ConditionData> = {
   },
 
   "strength-performance": {
-    metaTitle: "Strength and Performance | Muscle Activation Techniques | Powell, Ohio",
-    metaDescription: "MAT increases muscle contractile ability, which directly produces strength gains and better performance. Active adults in Powell, Dublin, and Columbus use MAT proactively to care for their neuromuscular system before pain becomes the reason.",
+    metaTitle: "Strength & Athletic Performance | MAT Powell, OH",
+    metaDescription: "Unlock stronger, more responsive muscles with Muscle Activation Techniques. Improve performance and reduce injury risk in Powell & Columbus, OH.",
     ogTitle: "Strength and Performance | Ohio Muscle Activation",
     ogDescription: "You do not have to be in pain to benefit from MAT. Proactive neuromuscular care raises the stress threshold, increases contractile strength, and builds a body that performs consistently.",
     heroKicker: "Condition",

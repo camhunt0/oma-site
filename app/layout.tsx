@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
-  title: "Ohio Muscle Activation | Powell, Dublin & Columbus, Ohio | MAT Specialist",
+  title: "Muscle Activation Techniques in Powell, OH | OMA",
   description:
-    "You've stretched. You've done PT. But it keeps coming back. Ohio Muscle Activation identifies which muscles your body has shut down and restores them. Serving Powell, Dublin & Columbus since 2018.",
+    "Restore strength, mobility, and pain-free movement with Muscle Activation Techniques in Powell, OH. Serving Columbus, Dublin & Delaware. Book your session.",
   keywords:
     "muscle activation techniques, MAT, Powell Ohio, Dublin Ohio, Columbus Ohio, hip pain, neck pain, post surgery recovery, MAT specialist Columbus, neuromuscular therapy, MATRx",
   openGraph: {
