@@ -1,9 +1,9 @@
 import Image from "next/image";
 
 const photos = [
-  { src: "/mat-session-a.jpg", alt: "Cameron Hunt performing a lower-body assessment during a MAT session" },
-  { src: "/mat-session-e.jpg", alt: "Cameron Hunt guiding spinal and torso movement during a MAT session" },
-  { src: "/mat-session-c.jpg", alt: "Cameron Hunt working one-on-one with a client during treatment" },
+  { src: "/mat-session-a.jpg", alt: "Cameron Hunt performing a lower-body assessment during a MAT session", width: 1400, height: 1120 },
+  { src: "/mat-session-e.jpg", alt: "Cameron Hunt guiding spinal and torso movement during a MAT session", width: 1400, height: 1120 },
+  { src: "/mat-session-c.jpg", alt: "Cameron Hunt working one-on-one with a client during treatment", width: 1400, height: 1400 },
 ];
 
 export default function Gallery() {
@@ -18,7 +18,7 @@ export default function Gallery() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 2 }}>
           {photos.map((p) => (
             <div key={p.src} style={{ overflow: "hidden", border: "1px solid var(--border)", aspectRatio: "4/5" }}>
-              <Image src={p.src} alt={p.alt} width={1400} height={1750} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+              <Image src={p.src} alt={p.alt} width={p.width} height={p.height} sizes="(max-width: 860px) 100vw, 365px" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
             </div>
           ))}
         </div>

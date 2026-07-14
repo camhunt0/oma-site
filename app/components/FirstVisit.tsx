@@ -21,7 +21,7 @@ export default function FirstVisit() {
             <p style={{ fontFamily: "var(--font-display)", fontSize: "1rem", color: "var(--text)", letterSpacing: "0.02em" }}>No Guessing. No Pressure. Just Clarity.</p>
           </div>
           <div style={{ overflow: "hidden", border: "1px solid var(--border)", aspectRatio: "4/3" }}>
-            <Image src="/mat-session-b.jpg" alt="Cameron Hunt working with a client during a MAT session" width={1400} height={1050} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            <Image src="/mat-session-b.jpg" alt="Cameron Hunt working with a client during a MAT session" width={1400} height={1129} sizes="(max-width: 860px) 100vw, 510px" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
           </div>
         </div>
         <div style={{ background: "var(--bg)", border: "1px solid var(--border)", padding: "32px 28px" }}>

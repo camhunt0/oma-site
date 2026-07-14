@@ -45,7 +45,7 @@ export default function ReferralModule() {
             {points.map((item, i) => (
               <div key={i} style={{ display: "flex", gap: 14, alignItems: "flex-start", padding: "14px 0", borderBottom: i < points.length - 1 ? "1px solid var(--border)" : "none" }}>
                 <div style={{ width: 18, height: 18, background: "var(--red-dim)", border: "1px solid rgba(204,24,24,0.35)", display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0, marginTop: 2 }}>
-                  <svg width="8" height="7" viewBox="0 0 8 7" fill="none"><path d="M1 3.5l2 2.5 4-5" stroke="#cc1818" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
+                  <svg aria-hidden="true" focusable="false" width="8" height="7" viewBox="0 0 8 7" fill="none"><path d="M1 3.5l2 2.5 4-5" stroke="#cc1818" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round" /></svg>
                 </div>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "0.87rem", color: "var(--muted)", lineHeight: 1.6 }}>{item}</p>
               </div>

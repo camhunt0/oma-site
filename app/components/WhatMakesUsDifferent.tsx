@@ -49,7 +49,7 @@ export default function WhatMakesUsDifferent() {
           </div>
           <div style={{ padding: "44px 40px", background: "var(--bg)", display: "flex", flexDirection: "column", overflow: "hidden" }}>
             <div style={{ flex: 1, overflow: "hidden", border: "1px solid var(--border)" }}>
-              <Image src="/cameron-headshot-new.jpg" alt="Cameron Hunt, founder of Ohio Muscle Activation" width={800} height={1000} style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+              <Image src="/cameron-headshot-new.jpg" alt="Cameron Hunt, founder of Ohio Muscle Activation" width={800} height={1000} sizes="(max-width: 860px) 100vw, 510px" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
             </div>
           </div>
         </div>

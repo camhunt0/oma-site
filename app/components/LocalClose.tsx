@@ -25,11 +25,11 @@ export default function LocalClose() {
             </div>
             {/* Change #7: Full address */}
             <div style={{ padding: "16px 20px", background: "var(--surface)", border: "1px solid var(--border)", borderTop: "2px solid var(--red)", display: "flex", alignItems: "flex-start", gap: 14 }}>
-              <svg width="14" height="18" viewBox="0 0 14 18" fill="none" style={{ flexShrink: 0, marginTop: 2 }}><path d="M7 1A6 6 0 0113 7c0 4.5-6 10-6 10S1 11.5 1 7a6 6 0 016-6z" stroke="#cc1818" strokeWidth="1.3" /><circle cx="7" cy="7" r="2" stroke="#cc1818" strokeWidth="1.3" /></svg>
+              <svg aria-hidden="true" focusable="false" width="14" height="18" viewBox="0 0 14 18" fill="none" style={{ flexShrink: 0, marginTop: 2 }}><path d="M7 1A6 6 0 0113 7c0 4.5-6 10-6 10S1 11.5 1 7a6 6 0 016-6z" stroke="#cc1818" strokeWidth="1.3" /><circle cx="7" cy="7" r="2" stroke="#cc1818" strokeWidth="1.3" /></svg>
               <div>
                 <p style={{ fontFamily: "var(--font-body)", fontWeight: 700, fontSize: "0.88rem", color: "var(--text)", marginBottom: 3 }}>10516 Sawmill Rd, Suite B</p>
                 <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)" }}>Powell, OH 43065</p>
-                <p style={{ fontFamily: "var(--font-body)", fontSize: "0.78rem", color: "var(--dim)", marginTop: 4 }}>By appointment only · (614) 946-9071</p>
+                <p style={{ fontFamily: "var(--font-body)", fontSize: "0.78rem", color: "var(--dim)", marginTop: 4 }}>By appointment only · <a href="tel:+16149469071">(614) 946-9071</a></p>
               </div>
             </div>
           </div>
@@ -53,7 +53,7 @@ export default function LocalClose() {
               <a href="#booking" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "14px 26px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>
                 Schedule a Diagnostic →
               </a>
-              <a href="sms:6149469071" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", border: "1px solid rgba(255,255,255,0.15)", color: "var(--text)", fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.85rem", padding: "13px 22px", textDecoration: "none" }}>
+              <a href="sms:+16149469071" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", border: "1px solid rgba(255,255,255,0.15)", color: "var(--text)", fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.85rem", padding: "13px 22px", textDecoration: "none" }}>
                 Text (614) 946-9071
               </a>
             </div>

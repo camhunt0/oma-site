@@ -13,7 +13,7 @@ export default function Footer({ showCTA = true }: { showCTA?: boolean }) {
             <Link href="/#booking" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 28px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>
               Schedule a Diagnostic
             </Link>
-            <a href="sms:6149469071" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", border: "1px solid rgba(255,255,255,0.2)", color: "var(--text)", fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.85rem", padding: "14px 22px", textDecoration: "none", letterSpacing: "0.04em" }}>
+            <a href="sms:+16149469071" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", border: "1px solid rgba(255,255,255,0.2)", color: "var(--text)", fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.85rem", padding: "14px 22px", textDecoration: "none", letterSpacing: "0.04em" }}>
               Text (614) 946-9071
             </a>
           </div>

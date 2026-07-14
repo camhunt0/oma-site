@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
         <div style={{ display: "grid", gap: 14, animation: "fadeUp 0.7s 0.3s ease both" }}>
           <div style={{ overflow: "hidden", border: "1px solid var(--border)", background: "var(--surface)", minHeight: 380 }}>
-            <Image src="/mat-session-d.jpg" alt="Cameron Hunt working with a client during a MAT session" width={1400} height={2000} priority style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            <Image src="/mat-session-d.jpg" alt="Cameron Hunt working with a client during a MAT session" width={1400} height={1993} priority sizes="(max-width: 860px) 100vw, 440px" style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
           </div>
           <div style={{ padding: "24px 28px", background: "var(--surface)", border: "1px solid var(--border)", borderLeft: "3px solid var(--red)" }}>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.92rem", fontStyle: "italic", color: "var(--text)", lineHeight: 1.6, marginBottom: 12 }}>

@@ -26,7 +26,7 @@ export default function Home() {
     <>
       <Nav />
       <FaqSchema faqs={faqs} path="/" />
-      <main>
+      <main id="main">
         <Hero />
         <WhyNothing />
         <WhatIsMAT />

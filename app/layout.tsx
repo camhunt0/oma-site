@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import ScrollReveal from "./components/ScrollReveal";
 import { Analytics } from "@vercel/analytics/react";
 
 const dmSans = DM_Sans({
@@ -134,7 +133,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
       </head>
-      <body><ScrollReveal />{children}<Analytics /></body>
+      <body><a href="#main" className="skip-link">Skip to content</a>{children}<Analytics /></body>
     </html>
   );
 }

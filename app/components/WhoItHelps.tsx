@@ -1,4 +1,3 @@
-"use client";
 import Link from "next/link";
 
 export default function WhoItHelps() {
@@ -25,11 +24,10 @@ export default function WhoItHelps() {
             <Link
               key={i}
               href={s.href}
-              style={{ padding: "32px 28px", background: "var(--surface)", border: "1px solid var(--border)", display: "block", textDecoration: "none", color: "inherit", transition: "border-color 0.2s" }}
-              onMouseEnter={(e) => { e.currentTarget.style.borderColor = "var(--red)"; }}
-              onMouseLeave={(e) => { e.currentTarget.style.borderColor = "var(--border)"; }}
+              className="hover-red"
+              style={{ padding: "32px 28px", background: "var(--surface)", border: "1px solid var(--border)", display: "block", textDecoration: "none", color: "inherit" }}
             >
-              <div style={{ fontSize: "1.4rem", marginBottom: 12 }}>{s.icon}</div>
+              <div aria-hidden="true" style={{ fontSize: "1.4rem", marginBottom: 12 }}>{s.icon}</div>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.65rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 10 }}>{s.label}</p>
               <h3 style={{ fontSize: "0.95rem", color: "var(--text)", marginBottom: 10, lineHeight: 1.3 }}>{s.headline}</h3>
               <p style={{ fontFamily: "var(--font-body)", fontSize: "0.82rem", color: "var(--muted)", lineHeight: 1.65, marginBottom: 14 }}>{s.detail}</p>
