@@ -99,10 +99,12 @@ const schemaMarkup = {
           }
         ]
       },
+      "hasMap": "https://maps.google.com/?cid=10957191009896197737",
       "sameAs": [
         "https://www.instagram.com/ohiomuscleactivation/",
         "https://www.facebook.com/ohiomuscleactivation/",
-        "https://www.yelp.com/biz/ohio-muscle-activation-powell"
+        "https://www.yelp.com/biz/ohio-muscle-activation-powell",
+        "https://maps.google.com/?cid=10957191009896197737"
       ]
     },
     {

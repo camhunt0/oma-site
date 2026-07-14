@@ -54,7 +54,7 @@ export default function Testimonials() {
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.88rem", color: "var(--muted)", lineHeight: 1.65 }}>Read current reviews from clients across Powell, Dublin, and Columbus.</p>
           </div>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
-            <a href="https://www.google.com/maps/search/?api=1&query=Ohio+Muscle+Activation+10516+Sawmill+Rd+Suite+B+Powell+OH+43065" target="_blank" rel="noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.75rem", padding: "12px 20px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase", whiteSpace: "nowrap" }}>
+            <a href="https://maps.google.com/?cid=10957191009896197737" target="_blank" rel="noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.75rem", padding: "12px 20px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase", whiteSpace: "nowrap" }}>
               Read Google Reviews →
             </a>
             <a href="https://www.instagram.com/ohiomuscleactivation/" target="_blank" rel="noreferrer" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "transparent", border: "1px solid rgba(255,255,255,0.15)", color: "var(--text)", fontFamily: "var(--font-body)", fontWeight: 600, fontSize: "0.8rem", padding: "11px 18px", textDecoration: "none", letterSpacing: "0.04em", whiteSpace: "nowrap" }}>
