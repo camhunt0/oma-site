@@ -6,6 +6,15 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Consolidate the public production alias on the existing canonical host.
+      // Match only this alias so localhost and Vercel previews remain usable.
+      // Next.js preserves the path and query string and emits a permanent 308.
+      {
+        source: "/:path*",
+        has: [{ type: "host", value: "oma-site-zeta\\.vercel\\.app" }],
+        destination: "https://www.ohiomuscleactivation.com/:path*",
+        permanent: true,
+      },
       // Legacy .html redirects from old Weebly site
       {
         source: "/muscleactivationtechniques.html",
