@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -135,7 +136,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaMarkup) }}
         />
       </head>
-      <body><a href="#main" className="skip-link">Skip to content</a>{children}<Analytics /></body>
+      <body><a href="#main" className="skip-link">Skip to content</a>{children}<Analytics /><GoogleAnalytics /></body>
     </html>
   );
 }

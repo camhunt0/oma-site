@@ -22,7 +22,7 @@ export default function Hero() {
             Your body is a neurological system. When a muscle is stressed, it stops sending signals to the brain, so other muscles compensate. Ohio Muscle Activation identifies which muscles have gone offline and restores their connection, 1-on-1, so movement feels stronger, cleaner, and more stable.
           </p>
           <div style={{ display: "flex", alignItems: "center", gap: 16, flexWrap: "wrap", marginBottom: 10, animation: "fadeUp 0.6s 0.45s ease both" }}>
-            <a href="#booking" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 28px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>
+            <a href="#booking" data-analytics-location="hero" style={{ display: "inline-flex", alignItems: "center", gap: 8, background: "var(--red)", color: "var(--text)", fontFamily: "var(--font-display)", fontWeight: 900, fontSize: "0.82rem", padding: "15px 28px", textDecoration: "none", letterSpacing: "0.07em", textTransform: "uppercase" }}>
               Start with a Diagnostic →
             </a>
             <a href="#about" style={{ fontFamily: "var(--font-body)", fontSize: "0.88rem", color: "var(--muted)", textDecoration: "none", borderBottom: "1px solid rgba(255,255,255,0.15)", paddingBottom: 2 }}>

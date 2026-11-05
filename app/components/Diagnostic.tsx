@@ -49,7 +49,7 @@ export default function Diagnostic() {
           </div>
         </div>
         <div>
-          <div style={{ background: "var(--bg)", border: "1px solid var(--border)", borderTop: "3px solid var(--red)", padding: "36px 32px" }}>
+          <div data-analytics-booking style={{ background: "var(--bg)", border: "1px solid var(--border)", borderTop: "3px solid var(--red)", padding: "36px 32px" }}>
             <p style={{ fontFamily: "var(--font-body)", fontSize: "0.68rem", fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: "var(--red-text)", marginBottom: 16 }}>Schedule Online</p>
             <h3 style={{ fontFamily: "var(--font-display)", fontSize: "1.3rem", color: "var(--text)", marginBottom: 20 }}>Book Your Diagnostic</h3>
 
