@@ -2,10 +2,10 @@
 
 Property measurement ID: `G-FWW3R9BXYD`.
 
-GA4 loads only on `www.ohiomuscleactivation.com` after the visitor accepts
-analytics cookies. The Analytics preferences link at the bottom of every page
-allows changing that choice. Declining after acceptance stops tracking, removes
-GA cookies, and reloads without the Google tag. Preview domains and localhost
+GA4 loads by default only on `www.ohiomuscleactivation.com`, unless the visitor
+has opted out. There is no consent popup. The footer discloses Analytics use and
+provides an on/off control. Previous declines are honored. Turning analytics off
+stops tracking, removes GA cookies, and reloads without the Google tag. Preview domains and localhost
 do not send GA4 traffic. Existing Vercel Analytics is unchanged.
 
 Google signals and advertising personalization are disabled. Custom events send
@@ -22,7 +22,7 @@ Never put personal information into campaign parameters or website URLs.
 | `booking_cta_click` | Click on a link to the booking section; not a completed booking. |
 | `phone_click` | Click on a telephone link; not a connected call. |
 | `sms_click` | Click on a text link; not a sent message. |
-| `booking_section_view` | At least 25% of the scheduling card became visible. Once per mounted card after consent. |
+| `booking_section_view` | At least 25% of the scheduling card became visible. Once per mounted card while analytics is enabled. |
 
 Custom events include `page_path` and `cta_location`. Condition-page booking
 placements distinguish the hero, details, and bottom CTA; navigation, mobile
@@ -40,7 +40,7 @@ Account-side settings and reports require an authorized Analytics login.
    navigation; it deliberately does not send a second set of manual page views.
    Review other enhanced measurement options; disable form interactions and site
    search if unnecessary, and do not configure collection of personal data.
-3. In Realtime, visit the website, accept analytics, navigate to a condition page,
+3. In Realtime, visit the website, ensure analytics is enabled, navigate to a condition page,
    click a booking CTA, and view the scheduling card. Verify the events arrive.
    A phone or text click opens the device handler; it does not send a message.
 4. Register event-scoped custom dimensions for `cta_location` and `page_path`
@@ -53,7 +53,7 @@ Account-side settings and reports require an authorized Analytics login.
 
 Start with traffic acquisition, landing pages, device category, and sessions
 with contact-intent events. Compare with actual new and attended appointments
-from Square separately. Consent choices, blockers, and attribution limitations
+from Square separately. Opt-outs, blockers, and attribution limitations
 mean Analytics counts are not a census of visitors or bookings.
 
 ## Checks

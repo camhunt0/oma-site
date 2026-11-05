@@ -1,4 +1,4 @@
-/* Loaded only after analytics consent, on the production domain. */
+/* Loaded on the production domain unless the visitor has opted out. */
 (function () {
   if (window.omaAnalyticsStarted) return;
   window.omaAnalyticsStarted = true;
